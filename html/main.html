@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="../css/common/reset.css">
   <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/common/variable.css">
   <link rel="stylesheet" href="../css/src/main.css">
 
   <title>Le Jour</title>
@@ -59,23 +60,25 @@
 
       </div>
     </header>
+
     <section id="slideBox">
+      <h2 class="blind">main slide 영역</h2>
       <div class="main_slide">
-        <div class="slide_wrap">
-          <div class="slider clearfix">
-            <div class="slide">
+        <div class="main_slide_wrap">
+          <div class="main_slider clearfix">
+            <div id="slide01" class="main_slide">
               <img src="../img/main_page/slideBox/slide_01.jpg" alt="본문 슬라이드 배너 01">
             </div>
-            <div class="slide">
+            <div id="slide02" class="main_slide">
               <img src="../img/main_page/slideBox/slide_02.jpg" alt="본문 슬라이드 배너 02">
             </div>
-            <div class="slide">
+            <div id="slide03" class="main_slide">
               <img src="../img/main_page/slideBox/slide_03.jpg" alt="본문 슬라이드 배너 03">
             </div>
-            <div class="slide">
+            <div id="slide04" class="main_slide">
               <img src="../img/main_page/slideBox/slide_04.jpg" alt="본문 슬라이드 배너 04">
             </div>
-            <div class="slide">
+            <div id="slide05" class="main_slide">
               <img src="../img/main_page/slideBox/slide_05.jpg" alt="본문 슬라이드 배너 05">
             </div>
           </div>
@@ -86,12 +89,210 @@
         </div>
       </div>
     </section>
-    <article id="productBox"></article>
-    <article id="eventBox"></article>
-    <article id="reviewBox"></article>
+
+    <article id="productBox">
+      <h2 class="area_title">Le Jour's selection</h2>
+      <div class="product_tab">
+        <ul class="product_tab_list clearfix">
+          <li class="on"><button type="button"><span>세트</span></button></li>
+          <li><button type="button"><span>세제</span></button></li>
+          <li><button type="button"><span>섬유유연제</span></button></li>
+          <li><button type="button"><span>주방/탈취용품</span></button></li>
+          <li><button type="button"><span>욕실용품</span></button></li>
+          <li><button type="button"><span>세탁보조제</span></button></li>
+          <li><button type="button"><span>로션/크림</span></button></li>
+          <li><button type="button"><span>기프트 액세서리</span></button></li>
+        </ul>
+      </div>
+      <div class="product_wrap">
+        <div class="product_btns blind_area clearfix">
+          <button type="button" class="next">
+            <span>next</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button type="button" class="prev">
+            <span>prev</span>
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+        </div>
+        <ul class="product_list clearfix last_margin">
+          <li>
+              <div class="img_box">
+                <a href="#">
+                  <div class="card_img">
+                    <!-- 이미지 들어갈 영역 -->
+                  </div>
+                  <div class="card_img_bg">
+                    <!-- 이미지 배경-->
+                  </div>
+                </a>
+                <div class="card_link blind_area clearfix">
+                  <a href="#"><i class="fa-regular fa-credit-card"></i>바로구매</a>
+                  <button type="button" class="wish">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>위시리스트</span></button>
+                    <button type="button" class="cart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>장바구니</span></button>
+                  </div>
+            </div>
+              <a href="#">
+                <dl class="card_content">
+                  <dt>
+                    <p class="item_name_en">Le Jour family set</p>
+                    <p class="item_name_ko">르주르 패밀리 세트</p>
+                  </dt>
+                  <dd>
+                    <span class="origin_price">102,000원</span>
+                    &#8594;
+                    <span class="now_price">91,800원</span>
+                  </dd>
+                </dl>
+              </a>
+          </li>
+          <li>
+            <div class="img_box">
+              <a href="#">
+                <div class="card_img">
+                  <!-- 이미지 들어갈 영역 -->
+                </div>
+                <div class="card_img_bg">
+                  <!-- 이미지 배경-->
+                </div>
+              </a>
+              <div class="card_link blind_area clearfix">
+                <a href="#"><i class="fa-regular fa-credit-card"></i>바로구매</a>
+                <button type="button" class="wish">
+                  <i class="fa-regular fa-heart"></i>
+                  <span>위시리스트</span></button>
+                  <button type="button" class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>장바구니</span></button>
+                </div>
+          </div>
+            <a href="#">
+              <dl class="card_content">
+                <dt>
+                  <p class="item_name_en">Le Jour family set</p>
+                  <p class="item_name_ko">르주르 패밀리 세트</p>
+                </dt>
+                <dd>
+                  <span class="origin_price">102,000원</span>
+                  &#8594;
+                  <span class="now_price">91,800원</span>
+                </dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+          <div class="img_box">
+            <a href="#">
+              <div class="card_img">
+                <!-- 이미지 들어갈 영역 -->
+              </div>
+              <div class="card_img_bg">
+                <!-- 이미지 배경-->
+              </div>
+            </a>
+            <div class="card_link blind_area clearfix">
+              <a href="#"><i class="fa-regular fa-credit-card"></i>바로구매</a>
+              <button type="button" class="wish">
+                <i class="fa-regular fa-heart"></i>
+                <span>위시리스트</span></button>
+                <button type="button" class="cart">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span>장바구니</span></button>
+              </div>
+        </div>
+          <a href="#">
+            <dl class="card_content">
+              <dt>
+                <p class="item_name_en">Le Jour family set</p>
+                <p class="item_name_ko">르주르 패밀리 세트</p>
+              </dt>
+              <dd>
+                <span class="origin_price">102,000원</span>
+                &#8594;
+                <span class="now_price">91,800원</span>
+              </dd>
+            </dl>
+          </a>
+          </li>
+          <li>
+            <div class="img_box">
+              <a href="#">
+                <div class="card_img">
+                  <!-- 이미지 들어갈 영역 -->
+                </div>
+                <div class="card_img_bg">
+                  <!-- 이미지 배경-->
+                </div>
+              </a>
+              <div class="card_link blind_area clearfix">
+                <a href="#"><i class="fa-regular fa-credit-card"></i>바로구매</a>
+                <button type="button" class="wish">
+                  <i class="fa-regular fa-heart"></i>
+                  <span>위시리스트</span></button>
+                  <button type="button" class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>장바구니</span></button>
+                </div>
+          </div>
+            <a href="#">
+              <dl class="card_content">
+                <dt>
+                  <p class="item_name_en">Le Jour family set</p>
+                  <p class="item_name_ko">르주르 패밀리 세트</p>
+                </dt>
+                <dd>
+                  <span class="origin_price">102,000원</span>
+                  &#8594;
+                  <span class="now_price">91,800원</span>
+                </dd>
+              </dl>
+            </a>
+          </li>
+        </ul>
+      
+        <div class="more_btn">
+          <a href="#">more view</a>
+        </div>
+      </div>
+
+    </article>
+
+    <article id="eventBox">
+    <h2 class="area_title">event</h2>
+    <div class="event_indicator">
+      
+    </div>
+    <div class="event_slide">
+      <div class="event_slide_wrap">
+        <div class="event_slider clearfix">
+          <div id="event01" class="event_slide">
+            <img src="../img/main_page/eventBox/event_01.jpg" alt="이벤트 슬라이드 배너 01">
+          </div>
+          <div id="event02" class="event_slide">
+            <img src="../img/main_page/eventBox/event_02.jpg" alt="이벤트 슬라이드 배너 02">
+          </div>
+          <div id="event03" class="event_slide">
+            <img src="../img/main_page/eventBox/event_03.jpg" alt="이벤트 슬라이드 배너 03">
+          </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="reviewBox">
+      <h2 class="area_title">review</h2>
+      <div class="review_slide_wrap"></div>
+    </article>
     <article id="snsBox"></article>
+
     <article id="footTopBox"></article>
+
     <footer id="footBox"></footer>
+
   </div> <!-- #wrap -->
   <!-- javascript -->  
   <script src="../js/common/modernizr-custom.js"></script>
