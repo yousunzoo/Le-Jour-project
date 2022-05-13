@@ -31,7 +31,15 @@ z-index: -1; width: 0; height: 0; overflow: hidden;}
   text-transform: capitalize;
 }
 
-.div_max_area {
-  width:auto; max-width:1120px;
-  height:auto; margin:auto
+
+.item_name_en {
+  margin-bottom : 6px;
+  font-size : var(--text_card_01);
+  color : var(--black_01)
+}
+
+.item_name_ko {
+  margin-bottom : 10px;
+  font-size : var(--text_card_02); font-weight: 700;
+  color : var(--brown_01)
 }
