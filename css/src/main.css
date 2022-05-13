@@ -324,14 +324,24 @@
   #reviewBox {
     position:relative;
     width: 100%; height:620px;
-    background-color: #eee;
+    background-color: #aaa;
   }
   
   /* #snsBox----------------------------------------- */
   #snsBox {
     position: relative;
-    width: 100%; height: 500px;
-    background-color: #555;
+    width: 100%; height: auto;
+    margin-bottom : 100px;
+  }
+
+  .insta_list {
+    width: 1000px;
+  }
+  .insta_list li {
+    float:left; margin-right : 20px;
+  }
+  .insta_list img {
+    width: 150px; height: 150px;
   }
 
   /* #footTopBox----------------------------------------- */

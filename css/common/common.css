@@ -30,3 +30,8 @@ z-index: -1; width: 0; height: 0; overflow: hidden;}
   letter-spacing: 4px;
   text-transform: capitalize;
 }
+
+.div_max_area {
+  width:auto; max-width:1120px;
+  height:auto; margin:auto
+}
