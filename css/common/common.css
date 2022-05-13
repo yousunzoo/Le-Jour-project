@@ -21,3 +21,12 @@
 .blind_area button>span,
 .blind {display: block; position:absolute;
 z-index: -1; width: 0; height: 0; overflow: hidden;}
+
+.area_title {
+  display: block;
+  width: 100%; height:60px; padding:60px 0;
+  font-size: 34px; color : var(--brown_01);
+  text-align: center; line-height: 60px;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+}
