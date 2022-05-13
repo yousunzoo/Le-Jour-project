@@ -23,7 +23,7 @@
     margin:auto;
   }
 
-  #logo {float:left; width:126px; height:30px; padding:8px 0;}
+  #logo {float:left; width:125px; height:29px; padding:8px 0;}
   #logo > a {
     background: url("../../img/common/headbox/logo-b.png");
     background-size: contain;
@@ -131,7 +131,7 @@
     
     /* product_list --------------------------------------- */
     .product_list {
-      width:1172px; height:100%;
+      width:1200px; height:100%;
       margin:auto;
       margin-bottom:80px;
     }
@@ -215,18 +215,6 @@
       width: 240px; height:auto;
       margin:auto; padding :30px 0;
       box-sizing: border-box;
-    }
-
-    .product_list .item_name_en {
-      margin-bottom : 6px;
-      font-size : var(--text_card_01);
-      color : var(--black_01)
-    }
-
-    .product_list .item_name_ko {
-      margin-bottom : 10px;
-      font-size : var(--text_card_02); font-weight: 700;
-      color : var(--brown_01)
     }
 
     .product_list .origin_price {
@@ -324,9 +312,85 @@
   #reviewBox {
     position:relative;
     width: 100%; height:620px;
-    background-color: #aaa;
+  }
+
+  .review_slide_wrap {
+    position:relative;
+    width: 80%; height:410px;
+    margin:auto;
   }
   
+  .review_btns {
+    position: absolute; top:50%; transform: translateY(-50%);
+    width: 100%; height:auto; z-index: 10;
+    font-size: 30px;
+  }
+
+  .review_btns .next {
+    float:right;
+  }
+  .review_btns .prev {
+    float:left;
+  }
+  
+  /* review_list */
+  .review_list {
+    width: 1120px; height:100%;
+    margin:auto;
+  }
+
+  .review_list li {
+    float:left;
+    width: 360px; height:100%;
+    margin-right:20px;
+    background-color: #fff;
+  }
+
+  .review_list li .review_img {
+    width: 100%; height:250px;
+  }
+
+  .review_list li:nth-child(1) .review_img {
+    background: url("../../img/main_page/reviewBox/review_01.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .review_list li:nth-child(2) .review_img {
+    background: url("../../img/main_page/reviewBox/review_02.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .review_list li:nth-child(3) .review_img {
+    background: url("../../img/main_page/reviewBox/review_03.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .review_content {
+    width: 100%; height:160px;
+    padding:20px;
+    box-sizing: border-box;
+  }
+  .review_con {
+    margin-bottom:10px;
+    font-size: var(--foot_content_01);
+    line-height:1.6;
+    letter-spacing: -1px;
+  }
+
+  .review_product {
+    position:relative;
+    border-top : 1px solid var(--border_gray);
+    padding-top:10px;
+  }
+  .review_product img {
+    position:absolute;
+    top:10px; right:0;
+  }
+
   /* #snsBox----------------------------------------- */
   #snsBox {
     position: relative;
@@ -347,10 +411,121 @@
   /* #footTopBox----------------------------------------- */
   #footTopBox {
     position: relative;
-    width: 100%; height: 510px;
-    background-color: #eee;
+    width: 100%; height: auto;
   }
   
+  .footTopDiv {
+    width: 1200px; height:250px;
+    padding: 130px 0;
+    margin:auto;
+  }
+
+  .footTop_left {
+    float:left;
+    width:760px; height:100%;
+  }
+  .footTop_right {
+    float:right;
+    width:350px; height:100%;
+    background: url("../../img/main_page/footTopBox/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .notice {
+    width: 100%; height:70px;
+    padding: 20px 2px; margin-bottom:20px;
+    box-sizing: border-box;
+    border-top : 1px solid var(--brown_01);
+    border-bottom : 1px solid var(--brown_01);
+    line-height:28px;
+    color : var(--black_01)
+  }
+  .notice h3 {
+    display: inline-block;
+    width:150px; height:100%;
+    font-size: var(--title_02);
+    font-weight: 700; text-transform: uppercase;
+  }
+  .notice a {
+    display: inline-block;
+    width:600px; height:100%;
+    font-size: var(--button_01);
+    letter-spacing: -1px;
+  }
+  .notice a i {
+    float:right;
+    font-size : 20px;
+    line-height:28px
+  }
+
+  /* info_left */
+  .cs_box {
+    float:left;
+    width: 377px; height:160px;
+    border-right:1px solid var(--brown_01);
+    padding:10px 0;
+    box-sizing: border-box;
+    color: var(--brown_01)
+  }
+
+  .info_tit {
+    margin-bottom:4px;
+    font-size : var(--account_01);
+  }
+  .cs_box .cs_num {
+    margin-bottom:10px;
+    font-size : var(--info_01);
+    font-weight: 700;
+  }
+  .cs_hour {
+    margin-bottom:10px;
+    font-size : var(--info_02);
+    letter-spacing: -1px;
+    line-height:1.6;
+  }
+  .cs_box .cs_hour > span {
+    padding-left:5px;
+  }
+
+  .ac_box {
+    float:right;
+    width: 377px; height:160px;
+    padding: 10px 0 10px 20px;
+    box-sizing: border-box;
+    color: var(--brown_01)
+  }
+
+  .account_num {
+    margin:6px 0 10px 0;
+    font-size:var(--account_02);
+    font-weight: 700;
+  }
+
+  .ac_btn a {
+    display: block;
+    width: 165px; height: 44px;
+    padding:0 20px; box-sizing: border-box;
+    font-size : var(--button_01);
+    line-height: 44px;
+    text-transform: uppercase;
+  }
+
+  .ac_btn a i {
+    float:right;
+    font-size: 18px;
+    line-height:44px;
+  }
+  .btn_cs {
+    float:left;
+    background-color: var(--yellow);
+    color:var(--brown_01)
+  }
+  .btn_faq {
+    float:right;
+    background-color: var(--brown_01);
+    color:var(--main_01)
+  }
   /* #productBox----------------------------------------- */
   #footBox {
     position: relative;
