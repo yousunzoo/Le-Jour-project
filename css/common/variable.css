@@ -1,0 +1,49 @@
+/* variable.css */
+
+:root {
+  font-size:16px;
+  
+  /* Color styles */
+--main_01: #F0E7DB;
+--brown_01: #53513D;
+--deep_gray: #53513D;
+--light_gray_01: #E4E4E4;
+--black_01: #666666;
+--white: #FFFFFF;
+--main_02: #E4D8C3;
+--yellow: #E7C35D;
+--black_02: #333333;
+--light_gray_02: #757575;
+--main_03: #BBB8A5;
+--sns_color: #878570;
+--beige_01: #D2C3A1;
+--beige_gray: #BAB7A4;
+--light_beige: #F7F4EE;
+--red: #FF6C68;
+--border_gray: #E0E0E0;
+--light_gray_03: #A9A9A9;
+
+/* Text-size styles */
+--text_card_01: 13px;
+--text_card_02: 16px;
+--title_01: 34px;
+--title_02: 18px;
+--button_01: 15px;
+--button_02: 12px;
+--account_01: 18px;
+--account_02: 26px;
+--info_01: 40px;
+--foot_title: 17px;
+--foot_content_01: 14px;
+--foot_content_02: 13px;
+--info_02: 16px;
+--m_title_01: 28px;
+--m_account_02: 26px;
+--m_foot_title: 15px;
+--m_copyright: 11px;
+--indi_text: 24px;
+--m_gnb: 17px;
+--join_title: 22px;
+--h2: 36px;
+
+}
