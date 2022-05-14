@@ -18,4 +18,26 @@
     background-size: cover;
     background-position: 50% 50%;
   }
+
+  .event_tab {
+    width: 540px; height: auto;
+    margin:auto;
+  }
+  .event_tab li {
+    float:left;
+    width: 180px; height: 64px;
+    background-color: var(--white);
+    outline : 1px solid var(--border_gray);
+    font-size: var(--text_card_02); 
+    color:var(--brown_01);
+    text-align: center; line-height: 64px; letter-spacing: -1px;
+  }
+  .event_tab .on {
+    background-color: var(--brown_01); color : var(--white);
+    outline:none;
+  }
+
+  .event_tab li:hover {
+    box-shadow: 3px 3px 3px var(--black_01);
+  }
 }
