@@ -1,0 +1,11 @@
+/* a_wrap.css */
+
+@media all {
+  #wrap {
+    width: 100vw;
+    min-width : 320px;
+    height:auto; min-height:1000px;
+    margin:auto; padding-top: 0;
+    background-color: var(--main_01);
+  }
+}

@@ -1,0 +1,48 @@
+@media all {
+   /* #headBox----------------------------------------- */
+   #headBox {
+    position:fixed; top:0; left:0; z-index:2000;
+    width: 100vw; height:auto;
+    min-height:70px; max-height: 100px;
+    padding:20px 170px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  .area_head {
+    width: 100%; max-width: 1440px; height:auto;
+    margin:auto;
+  }
+
+  #logo {float:left; width:126px; height:29px; padding:8px 0;}
+  #logo > a {
+    background: url("../../../img/common/headbox/logo-b.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  #navBox {float:right;}
+  .nav_btn {display: none;}
+
+  .gnb_top {margin-bottom:12px;}
+  .gnb_top li {
+    float:right; position:relative;
+    width:auto; height:13px; padding:2px 12px;
+    font-size:13px; text-transform: uppercase;
+    letter-spacing : 1px; word-spacing: -4px;}
+  .gnb_top li:first-child {border-right: none;}
+  .gnb_top li span {margin-right:4px}
+  .gnb_top li:before {
+    content:""; position:absolute; top:5px; right:0; width: 1px; height:10px; background-color: var(--light_gray_02);
+  }
+  .gnb_top li:first-child:before {display: none;}
+  .gnb_bottom li {float:left; padding : 0 10px;
+    font-size:14px;
+    font-weight: 500;
+    letter-spacing : 1px; text-transform: uppercase;
+  }
+
+  .gnb_top li:hover,
+  .gnb_bottom li:hover {
+    font-weight:700;
+  }
+}
