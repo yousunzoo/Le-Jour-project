@@ -5,5 +5,47 @@
 @import url("../common/page/b_footBox.css");
 
 @media all {
-  #guideBox {width: 100%; height:2000px;}
+  #guideBox {width: 100%; height:auto;}
+  .guide_wrap {width: 100%; height:auto; padding-bottom : 100px;}
+  .page_banner {margin-bottom:100px; background: url("../../img/product_guide/banner.jpg");}
+
+  /* product_table */
+  .product_table_wrap {width: 100%; height:auto; margin-bottom:40px;}
+  .product_table {width: 1110px; height:auto; margin:auto}
+  .product_table td {
+    line-height:1.8; border-bottom : 1px solid var(--border_gray); border-right : 1px solid var(--border_gray)}
+  .product_table .td_right {border-right:none}
+  .product_table .table_w {padding:10px; box-sizing: border-box; text-align: center;}
+  .product_table .bd_r {border-right:1px solid var(--border_gray)}
+  .product_table thead {width: 100%; height:100px;}
+  .product_table th {position: relative; padding:10px; text-align: center; font-size:18px; color:var(--black_02);}
+  .product_table tbody {
+    border-top :3px solid var(--brown_01);
+    border-bottom :3px solid var(--brown_01)
+  }
+  .product_table thead th:nth-child(2):before,.product_table thead th:nth-child(3):before {
+    position:absolute; content:""; right:0; top:50%; transform: translateY(-50%);
+    width: 1px; height: 40px;
+    background-color: var(--border_gray);
+  };
+  .product_table thead p {display: block; line-height:1.4; color:var(--brown_01)}
+  .product_table thead .p_ko {font-size:15px; font-weight:400; letter-spacing: -1px;}
+  .product_table thead .p_en {font-size:20px; font-weight:700}
+  .product_img td {padding:10px; box-sizing: border-box; border-right:none;}
+  .product_img img {width: 300px;height:340px;}
+  .product_ex td, .product_incense td {padding:20px; padding-bottom:60px; box-sizing:border-box; font-size:15px; color:var(--black_02); letter-spacing:-1px; word-break:keep-all;}
+  .product_ex .line_bg {background-color: var(--main_02);}
+  .product_incense td {padding-bottom:20px;}
+  .bol {font-weight:600}
+
+
+  /* certi_box */
+  .certi_box {width: 1110px; height:130px; margin:auto; background-color: var(--main_02);}
+  .certi_content {width: 540px; height:80px; padding:25px 0; margin:auto;}
+  .certi_content img {float:left; width: 80px; height: 80px;}
+  .certi_content p {
+    float:right; display:block; width: 420px; height:80px;
+    padding:16px 0; box-sizing: border-box;
+    font-size : 15px; letter-spacing: -1px; line-height:1.6; color:var(--black_02)
+  }
 }

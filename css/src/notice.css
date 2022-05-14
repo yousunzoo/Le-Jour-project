@@ -8,13 +8,7 @@
   #noticeBox {
     width: 100%; height: auto;
   }
-  .notice_banner {
-    width: 100%; height:300px;
-    background: url("../../img/notice/banner.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
+  .page_banner {background: url("../../img/notice/banner.jpg"); }
 
   .notice_zone {
     width: 100%; height:auto; padding-bottom:160px;

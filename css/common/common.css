@@ -31,6 +31,12 @@ z-index: -1; width: 0; height: 0; overflow: hidden;}
   text-transform: capitalize;
 }
 
+.page_banner {
+  width: 100%; height:300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
 .page_h2 {
   display: block;
   width: 100%; height:60px; padding: 100px 0 60px 0;

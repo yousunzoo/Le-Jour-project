@@ -11,13 +11,9 @@
   .event_wrap {
     width:100%; height:100%;
   }
-  .event_banner {
-    width: 100%; height:300px;
-    background: url("../../img/event/banner.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
+
+  .page_banner {
+    background: url("../../img/event/banner.jpg");}
 
   .event_tab_wrap {
     width: 540px; height: auto;
