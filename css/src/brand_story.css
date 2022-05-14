@@ -1,0 +1,94 @@
+/* brand_story.css */
+
+@import url("../common/page/a_wrap.css");
+@import url("../common/page/b_headBox.css");
+@import url("../common/page/b_footBox.css");
+
+@media all {
+  #brandBox {
+    width: 100%; height : auto;
+  }
+
+  .brand_wrap {
+    width: 100%; height: 100%;
+  }
+  .brand_banner {
+    position:relative;
+    width: 100%; height:1000px;
+  }
+  .banner_img {
+    width:100%; height:100%;
+    background: url("../../img/brand_story/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .slide_content {
+    position:absolute; bottom : 10%; left:0; right:0; margin:auto;
+    text-align: center; font-size: 13px; color:#fff; font-weight:700;
+    text-transform: uppercase; letter-spacing: 2px;
+    text-shadow: 3px 3px 3px var(--deep_gray);
+  }
+
+  .slide_content img {
+    width:16px; height:24px;
+    margin-bottom:16px
+  }
+
+  /* story_01 */
+  .story_01, .story_02 {width: 100%; height: auto; background-color: var(--white); }
+  .story_01_top, .story_02_top {width: 1140px; height: auto; padding-top:100px; margin:auto; margin-bottom:100px}
+  .div_en {float:left;}
+  .div_ko {float:right;}
+  .story_01_top p, .story_02_top p {margin-bottom:15px; font-size:17px; line-height: 1.4;}
+  .tit_p {font-weight: 600; color:var(--black_02)}
+  .txt_p {letter-spacing: -1px; color:var(--black_03)}
+
+  .div_ko .tit_p {letter-spacing: -1px; line-height:1.6}
+  .div_ko .txt_p {letter-spacing: -1px; line-height:1.6}
+
+  .story_01_bottom {width: 1140px; height:auto; margin:auto; padding-bottom:35px;}
+  .story_01_bottom span {
+    display: block; line-height:1.6;
+    text-align: right; font-weight: 700; font-size: 17px; color:var(--black_01)}
+  .story_01_bottom .brand_name {font-family: 'Abril Fatface', cursive; font-weight:400; font-size:23px;}
+
+  /* brand_img_box */
+  .brand_img_box {width: 100%; height: 1000px; margin:auto;}
+  .img_box_content {position:relative; float:left; width: 50%; height:100%;}
+  .img_box_content:after {
+    position:absolute; top: 140px; left:50%; transform: translateX(-50%);
+    content:""; width: 20px; height: 20px; border-radius: 100%; background-color: rgba(0,0,0,0.3);
+  }
+  .img_box_content p {
+    position:absolute; display: block; bottom: 140px; left:50%; transform:translateX(-50%);
+    text-align: center; line-height:1.6; font-size : 15px; font-weight: 600; color:var(--deep_gray)
+  }
+
+  .img_box_img {
+    float:right; width: 50%; height: 100%;
+    background: url("../../img/brand_story/inner_01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+  }
+
+  /* story_02 */
+  .story_02_top {margin-bottom:100px;}
+  .story_02_bottom {width: 100%; height:auto; padding-bottom:100px;}
+  .story_02_bottom p {display: block; width: 100%; height:auto; margin-bottom:15px;line-height:1.6; text-align: center; letter-spacing: -1px; color:var(--black_02)}
+  .bd_txt {font-size: 15px;}
+  .bd_ko {font-size:16px; font-weight:600;}
+  .bd_site {font-weight:700}
+
+
+
+
+
+
+
+
+
+
+
+}
