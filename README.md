@@ -21,6 +21,10 @@
   1. common.css
   2. reset.css
   3. variable.css
+  * /page
+    1. a_wrap.css
+    2. b_headBox.css
+    3. b_footBox.css
 
 * /main_page (메인페이지 rwd css)
   1. smartphone.css

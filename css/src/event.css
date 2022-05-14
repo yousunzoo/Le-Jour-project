@@ -1,0 +1,21 @@
+/* event.css */
+
+@import url("../common/page/a_wrap.css");
+@import url("../common/page/b_headBox.css");
+@import url("../common/page/b_footBox.css");
+
+@media all {
+  #eventBox {
+    width: 100%; height:2200px;
+  }
+  .event_wrap {
+    width:100%; height:100%;
+  }
+  .event_banner {
+    width: 100%; height:300px;
+    background: url("../../img/event/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+}

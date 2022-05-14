@@ -31,6 +31,14 @@ z-index: -1; width: 0; height: 0; overflow: hidden;}
   text-transform: capitalize;
 }
 
+.page_h2 {
+  display: block;
+  width: 100%; height:60px; padding: 100px 0 60px 0;
+  font-size:36px; font-weight:500; color :var(--brown_01);
+  text-align: center; line-height: 60px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
 
 .item_name_en {
   margin-bottom : 6px;
