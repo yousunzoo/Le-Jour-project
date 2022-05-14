@@ -6,7 +6,7 @@
 
 @media all {
   #eventBox {
-    width: 100%; height:2200px;
+    width: 100%; height:auto;
   }
   .event_wrap {
     width:100%; height:100%;
@@ -19,9 +19,9 @@
     background-position: 50% 50%;
   }
 
-  .event_tab {
+  .event_tab_wrap {
     width: 540px; height: auto;
-    margin:auto;
+    margin:auto; margin-bottom:60px;
   }
   .event_tab li {
     float:left;
@@ -39,5 +39,102 @@
 
   .event_tab li:hover {
     box-shadow: 3px 3px 3px var(--black_01);
+  }
+
+  .event_list_wrap {
+    width: 100%; height:auto;
+    margin:auto; margin-bottom:80px;
+  }
+
+  .event_now, .event_end {
+    width: 1000px; height:auto; margin:auto;
+  }
+  .event_list li {
+    position:relative;
+    width: 100%; height:300px;
+    margin-bottom:30px;
+    background-color: #fff;
+  }
+  .event_list li:last-child {
+    margin-bottom:0;
+  }
+
+  .card_left {
+    float:left; position:relative;
+    width: 500px; height:300px;
+  }
+
+  .card_left img {
+    width: 100%; height: 100%;
+  }
+
+  .card_right {
+    float:right;
+    width: 500px; height:100%;
+  }
+
+  .event_content {
+    width: 100%;
+    padding: 90px;
+    box-sizing: border-box;
+  }
+
+  .ev_txt{font-size: 15px; color : var(--light_gray_03) }
+  .ev_txt:first-child{margin-bottom : 10px;}
+  .ev_name {
+    margin-bottom:40px;
+    font-size:24px; color:var(--black_02); font-weight:700;
+  }
+
+  .pagination {
+    --pag_num : 1; 
+    width: calc(var(--pag_num) * 30px); height:auto; margin:auto; padding-bottom:160px;
+  }
+  .pagination button {
+    width: 30px; height: 45px;
+    line-height:45px; font-size:15px; text-align: center;
+  }
+
+  .pagination .on {
+    font-weight:700;
+    border-bottom:2px solid var(--brown_01)
+  }
+
+  /* .event_list .end */
+  .card_left h3 {
+    position:absolute; top:0; bottom:0; left:0; right:0;  z-index:20;
+    display: block;
+    width: 200px; height:20px; padding : 20px 0; margin:auto;
+    font-size:20px; color:var(--white); font-weight: 500;
+    border-top: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
+  }
+
+  .event_end li:before{
+    content:""; position:absolute; top:0; left:0; z-index:10;
+    width:500px; height:300px;
+    background-color: var(--black_01);
+    opacity: 70%;
+  }
+  .event_end li:after{
+    content:""; position:absolute; top:0; right:0; z-index:10;
+    width:500px; height:300px;
+    background-color: var(--white);
+    opacity: 50%;
+  }
+
+  /* event_winner */
+  .event_winner {width: 100%; height:auto;}
+  .event_table {width: 1200px;height:auto; margin:auto; text-align: center;}
+  .event_table thead {
+    height:60px; 
+    border-top : 1px solid var(--brown_01);
+    border-bottom : 1px solid var(--main_03)
+  }
+
+  .event_table th {font-weight: 500; font-size:15px; color:var(--black_01)}
+  .event_table tbody tr {
+    height: 110px; font-size:15px; color:var(--brown_01); letter-spacing: -1px;
+    border-bottom:1px solid var(--border_gray)
   }
 }
