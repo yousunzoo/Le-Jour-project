@@ -1,0 +1,60 @@
+/* notice.css */
+
+@import url("../common/page/a_wrap.css");
+@import url("../common/page/b_headBox.css");
+@import url("../common/page/b_footBox.css");
+
+@media all {
+  #noticeBox {
+    width: 100%; height: auto;
+  }
+  .notice_banner {
+    width: 100%; height:300px;
+    background: url("../../img/notice/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .notice_zone {
+    width: 100%; height:auto; padding-bottom:160px;
+  }
+  
+  .notice_board {
+    width: 100%; height:auto;
+    margin-bottom:80px;
+  }
+  .notice_table {
+    width: 1200px; height:auto;
+    margin:auto;
+  }
+
+  .notice_table thead {
+    height:60px; 
+    border-top : 1px solid var(--brown_01);
+    border-bottom : 1px solid var(--main_03)
+  }
+  .notice_table th {font-weight: 500; font-size:15px; color:var(--black_01)}
+  .notice_table tbody tr {
+    height:110px; text-align: center; color:var(--black_01); letter-spacing: -1px;
+    border-bottom : 1px solid var(--border_gray)
+  }
+  .notice_table tbody .no_name {
+    text-align: left;
+  }
+
+  .pagination {
+    --pag_num : 1; 
+    width: calc(var(--pag_num) * 30px); height:auto; margin:auto;
+  }
+  .pagination button {
+    width: 30px; height: 45px;
+    line-height:45px; font-size:15px; text-align: center;
+  }
+
+  .pagination .on {
+    font-weight:700;
+    border-bottom:2px solid var(--brown_01)
+  }
+
+}
