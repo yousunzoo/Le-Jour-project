@@ -43,3 +43,10 @@ z-index: -1; width: 0; height: 0; overflow: hidden;}
   font-size : var(--text_card_02); font-weight: 700;
   color : var(--brown_01)
 }
+
+.footer_title {
+  margin-bottom:14px;
+  font-size : var(--foot_title);
+  color : var(--brown_01);
+  text-transform: uppercase;
+}

@@ -23,9 +23,10 @@
     margin:auto;
   }
 
-  #logo {float:left; width:125px; height:29px; padding:8px 0;}
+  #logo {float:left; width:126px; height:29px; padding:8px 0;}
   #logo > a {
     background: url("../../img/common/headbox/logo-b.png");
+    background-repeat: no-repeat;
     background-size: contain;
   }
 
@@ -412,6 +413,7 @@
   #footTopBox {
     position: relative;
     width: 100%; height: auto;
+    background-color: var(--main_02);
   }
   
   .footTopDiv {
@@ -530,14 +532,87 @@
   #footBox {
     position: relative;
     width: 100%; height: 550px;
-    background-color: #555;
+    background-color: var(--main_03);
   }
 
+  .area_foot {
+    width: 1200px; height:400px;
+    margin:auto; padding-top:80px;
+  }
+  .footer_top {
+    width: 100%; height:auto; padding-bottom:40px;
+    border-bottom:1px solid var(--brown_01)
+  }
+  .footer_top > div{float:left; margin-right:10px}
 
+  .footer_logo {
+    width:210px; height:auto;
+  }
+  .footer_logo .info_logo {
+    width:126px; height:29px;
+    margin-bottom:15px;
+    background: url("../../img/common/footbox/logo-f.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .footer_logo .copyright {
+    font-size:var(--text_card_01); color:var(--black_01);
+    line-height:1.6; font-weight:700;
+  }
 
+  .customer_center {
+    width: 300px; height:auto;
+  }
 
+  .ft_txt {
+    margin-bottom:10px;
+    font-size : var(--foot_content_01); color : var(--black_01);
+    line-height:1.6; letter-spacing: -1px;
+  }
 
+  .ft_txt span {
+    display: block;
+    font-size : var(--foot_content_02);
+  }
 
+  .links {
+    width:150px; height:auto;
+  }
+
+  .cs_center {
+    width: 150px; height: auto;
+  }
+
+  .footer_top .ft_icons {
+    position:relative;
+    float:right; margin-right:0; 
+    width: 120px; height:150px;
+  }
+  .social {margin-bottom:20px;
+    width: 100%; height:36px;
+  }
+
+  .social > li {
+    float:left; margin-right:5px;
+    width: 36px; height: 36px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .social li:nth-child(1) {background: url("../../img/common/footbox/insta.png");}
+  .social li:nth-child(2) {background: url("../../img/common/footbox/facebook.png");}
+  .social li:nth-child(3) {background: url("../../img/common/footbox/youtube.png");}
+
+  .ft_certify {
+    position:absolute; bottom:0; right:0;
+    width: 74px; height: 74px;
+    background: url("../../img/common/footbox/inipay_74x74_color.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
 
 
 
