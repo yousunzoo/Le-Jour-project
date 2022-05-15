@@ -14,14 +14,17 @@
     position:relative;
     width: 960px; height:380px; margin:auto; margin-bottom:80px; background-color: #fff;}
 
-  /* meber_login */
-
+  /* member_login */
 
   .member_login {
     position:absolute; top:50%; left:0; transform: translateY(-50%);
     width: 480px; height:250px; border-right: 1px solid var(--black_03);}
+  
   .form_h3 {font-size:20px; font-weight:700; color:var(--black_02); text-align: center; letter-spacing: 2px;}
+
   #formLogin, #formOrder {width: 380px; height: auto; margin:auto; padding-top:40px;}
+
+  /* form Login */
   #formLogin > form {
     width: 100%; height:auto; margin-right:10px; margin-bottom:16px;
   }

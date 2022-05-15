@@ -15,6 +15,7 @@
   .page_banner {
     background: url("../../img/event/banner.jpg");}
 
+  /* event_tab */
   .event_tab_wrap {
     width: 540px; height: auto;
     margin:auto; margin-bottom:60px;
@@ -37,6 +38,8 @@
     box-shadow: 3px 3px 3px var(--black_01);
   }
 
+  /* event_list */
+  
   .event_list_wrap {
     width: 100%; height:auto;
     margin:auto; margin-bottom:80px;
@@ -81,7 +84,7 @@
     margin-bottom:40px;
     font-size:24px; color:var(--black_02); font-weight:700;
   }
-
+  /* pagination */
   .pagination {
     --pag_num : 1; 
     width: calc(var(--pag_num) * 30px); height:auto; margin:auto; padding-bottom:160px;
