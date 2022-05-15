@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- notice.html -->
+<!-- login.html -->
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8">
@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="../css/common/reset.css">
   <link rel="stylesheet" href="../css/common/common.css">
   <link rel="stylesheet" href="../css/common/variable.css">
-  <link rel="stylesheet" href="../css/src/notice.css">
+  <link rel="stylesheet" href="../css/src/login.css">
 
   <link rel="apple-touch-icon" href="../favicon.png">
   <link rel="shortcut icon" href="../favicon.png" type="image/png">
-  <title>notice</title>
+  <title>login</title>
 </head>
 <body>
   <!-- layout -->
@@ -59,67 +59,89 @@
             </ul>
           </div>
         </div>
-  
+
       </div>
     </header>
 
-    <article id="noticeBox">
-      <div class="notice_wrap">
+    <article id="loginBox">
+      <div class="login_wrap">
         <div class="page_banner"></div>
-        <div class="notice_zone">
-          <h2 class="page_h2">notice</h2>
-          <div class="notice_board">
-            <table class="notice_table">
-              <colgroup>
-                <col style="width:120px">
-                <col style="width:680px">
-                <col style="width:200px">
-                <col style="width:200px">
-              </colgroup>
+        <h2 class="page_h2">log In</h2>
+        <div class="log_in_div">
+        <div class="member_login">
+          <h3 class="form_h3">회원 로그인</h3>
+          <div id="formLogin">
+            <form action="#" method="POST" class="clearfix">
+              <fieldset class="formLogin_left">
+                <legend>회원 로그인</legend>
+                <div class="user_input">
+                  <label for="usrID">
+                    <span class="blind">사용자 로그인을 위한 ID를 입력하세요</span>
+                  </label>
+                  <input type="text" id="usrID" name="usrID" value="" placeholder="아이디" required />
+                </div>
+                <div class="user_input">
+                  <label for="usrPw">
+                    <span class="blind">사용자 로그인을 위한 비밀번호를 입력하세요.</span>
+                  </label>
+                  <input type="password" id="usrPw" name="usrPw" value="" placeholder="비밀번호" required />
+                </div>
+              </fieldset>
+              <fieldset class="formLogin_right">
+                <legend>로그인 버튼 및 기타</legend>
+                <div class="login_enter">
+                  <input type="submit" value="로그인" />
+                </div>
+              </fieldset>
+              <fieldset class="formLogin_bottom">
+                <legend>아이디 저장 및 찾기</legend>
+                <div class="id_chk clearfix">
+                  <span class="form_el clearfix">
+                    <input type="checkbox" id="saveID" name="saveID" value="y" />
+                    <label for="saveID"><span>아이디 저장</span></label>
+                  </span>
+                   <ul class="find clearfix">
+                     <li class="find_id"><button type="button" id="btnFindId">아이디 찾기</button></li>
+                     <li class="find_pw"><button type="button" id="btnFindPwd">비밀번호 찾기</button></li>
+                   </ul>
+                </div>
+              </fieldset>
+            </form>
+            
 
-              <thead>
-                <tr>
-                  <th>번호</th>
-                  <th>제목</th>
-                  <th>작성자</th>
-                  <th>작성일</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="num">4</td>
-                  <td class="no_name"><a href="#">★ 르주르 홈페이지 리뉴얼로 인한 안내사항</a></td>
-                  <td class="no_writer">관리자</td>
-                  <td class="no_date">2022.04.21</td>
-                </tr>
-                <tr>
-                  <td class="num">3</td>
-                  <td class="no_name"><a href="#">★ 르주르 2021 올해의 브랜드 대상 영유아세제 부분 수상</a></td>
-                  <td class="no_writer">관리자</td>
-                  <td class="no_date">2022.04.21</td>
-                </tr>
-                <tr>
-                  <td class="num">2</td>
-                  <td class="no_name"><a href="#">★ 르주르 대한아토피협회 추천 제품으로 선정</a></td>
-                  <td class="no_writer">관리자</td>
-                  <td class="no_date">2022.04.21</td>
-                </tr>
-                <tr>
-                  <td class="num">1</td>
-                  <td class="no_name"><a href="#">★ 르주르 오프라인 입점 안내</a></td>
-                  <td class="no_writer">관리자</td>
-                  <td class="no_date">2022.04.21</td>
-                </tr>
-              </tbody>
-            </table>
           </div>
-          <div class="pagination on">
-            <ul>
-              <button type="button" class="on"><span>1</span></button>
-            </ul>
+
+        </div>
+        <div class="order_login">
+          <h3 class="form_h3">비회원 주문조회</h3>
+          <div id="formOrder">
+            <form action="#" method="POST" class="clearfix">
+              <fieldset class="formLogin_left">
+                <legend>비회원 주문조회</legend>
+                <div class="user_input">
+                  <label for="orderName"><span class="blind">주문자 명을 입력하세요.</span></label>
+                  <input type="text" id="orderName" name="orderName" value="" placeholder="주문자명" required />
+                </div>
+                <div class="user_input">
+                  <label for="orderNum"><span class="blind">주문번호를 입력하세요.</span></label>
+                  <input type="text" id="orderNum" name="orderNum" value="" placeholder="주문번호" required />
+                </div>
+              </fieldset>
+              <fieldset class="formLogin_right">
+                <legend>확인</legend>
+                <div class="order_enter">
+                  <input type="submit" value="확인" />
+                </div>
+              </fieldset>
+            </form>
           </div>
         </div>
-      </div>
+        </div>
+        <div class="go_to_join">
+          <p class="p_tit">아직 회원이 아니신가요?</p>
+          <p class="p_txt">회원이 되시면 빠른 신상품 정보와 다양한 할인 혜택을 받으실 수 있습니다.</p>
+          <a href="./join.html">회원가입하러 가기<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
     </article>
 
     <footer id="footBox">
@@ -153,7 +175,7 @@
         <div class="cs_center">
           <h3 class="footer_title">cs center</h3>
           <ul class="footer_ul">
-            <li class="ft_txt"><a href="#">공지사항</a></li>
+            <li class="ft_txt"><a href="./notice.html">공지사항</a></li>
             <li class="ft_txt"><a href="#">FAQ</a></li>
             <li class="ft_txt"><a href="#">Q&A</a></li>
           </ul>
@@ -176,12 +198,9 @@
       </div>
       </div>
     </footer>
-
-
-
-  </div> <!-- #wrap -->
+  </div>
   <!-- javascript -->  
-  <script src="../js/modernizr-custom.js"></script>
+  <script src="../js/common/modernizr-custom.js"></script>
   <script src="../js/common/jquery-3.6.0.min.js"></script>
   <script src="../js/common/jquery-ui.min.js"></script>
 </body>
