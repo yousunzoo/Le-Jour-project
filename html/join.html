@@ -63,7 +63,144 @@
       </div>
     </header>
     <article id="joinBox">
-
+      <div class="join_wrap">
+        <div class="page_banner"></div>
+        <h2 class="page_h2">join us</h2>
+        <div class="join_div">
+          <div class="join_inner">
+            <div class="join_title">
+              <h3>회원정보 입력</h3>
+              <p>(* 표시는 필수입력항목입니다.)</p>
+            </div>
+            <div class="join_form">
+              <form action="#" method="POST">
+                <fieldset class="form_input">
+                  <legend>사용자 계정 입력</legend>
+                  <div class="user_input">
+                    <label for="usrID" class="info_r">아이디</label>
+                    <input type="text" id="usrID" name="usrID" value="" placeholder="영문 소문자/숫자4~20자" required />
+                    <p>아이디는 4자 이상으로 입력해 주세요</p>
+                  </div>
+                  <div class="user_input">
+                    <label for="usrPw" class="info_r">비밀번호</label>
+                    <input type="password" id="usrPw" name="usrPw" value="" placeholder="10~16자의 영문자,숫자,특수문자조합" required />
+                    <p class="p_red">* 특수문자는 ! " @ # $ % ^ & ' ( ) * + = , - _ . : ; < > ? /  ` ~ | { } 만 가능합니다.</p>
+                  </div>
+                  <div class="user_input">
+                    <label for="usrPwCk" class="info_r">비밀번호 확인</label>
+                    <input type="password" id="usrPwCk" name="usrPwCk" value="" placeholder="입력하신 비밀번호를 다시 한번 입력해주세요." required />
+                  </div>
+                  <div class="user_input">
+                    <label for="userName" class="info_r">이름</label>
+                    <input type="text" id="userName" name="userName" value="" required />
+                  </div>
+                  <div class="user_input usr_birth">
+                    <p class="p_label" class="info_r">생년월일</p>
+                      <div class="usrbirth_y">
+                        <select name="usrBirthY" name="usrBirthY" value="" placeholder="2022">
+                          <option value="2022">2022</option>
+                          <option value="2021">2021</option>
+                          <option value="2020">2020</option>
+                          <option value="2019">2019</option>
+                          <option value="2018">2018</option>
+                          <option value="2017">2017</option>
+                          <option value="2016">2016</option>
+                          <option value="2015">2015</option>
+                          <option value="2014">2014</option>
+                          <option value="2013">2013</option>
+                          <option value="2012">2012</option>
+                          <option value="2011">2011</option>
+                          <option value="2010">2010</option>
+                          <option value="2009">2009</option>
+                          <option value="2008">2008</option>
+                          <option value="2007">2007</option>
+                        </select>
+                        <label for="usrBirthY">년</label>
+                      </div>
+                      <div class="usrbirth_m">
+                        <select name="usrBirthM" id="usrBirthM" value="" placeholder="01">
+                          <option value="1">01</option>
+                          <option value="2">02</option>
+                          <option value="3">03</option>
+                          <option value="4">04</option>
+                          <option value="5">05</option>
+                          <option value="6">06</option>
+                          <option value="7">07</option>
+                          <option value="8">08</option>
+                          <option value="9">09</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                        </select>
+                        <label for="usrBirthM">월</label>
+                      </div>
+                      <div class="usrbirth_d">
+                        <select name="usrBirthD" id="usrBirthD" value="" placeholder="01">
+                          <option value="1">01</option>
+                          <option value="2">02</option>
+                          <option value="3">03</option>
+                          <option value="4">04</option>
+                          <option value="5">05</option>
+                          <option value="6">06</option>
+                          <option value="7">07</option>
+                          <option value="8">08</option>
+                          <option value="9">09</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">28</option>
+                          <option value="29">29</option>
+                          <option value="30">30</option>
+                          <option value="31">31</option>
+                        </select>
+                        <label for="usrBirthD">일</label>
+                      </div>
+                  </div>
+                  <div class="user_input usr_sex">
+                    <p class="p_label" class="info_r">성별</p>
+                    <div class="usr_sex_m">
+                      <input type="radio" id="man" name="usrSex" value="m">
+                      <label for="man">남자</label>
+                    </div>
+                    <div class="usr_sex_w">
+                      <input type="radio" id="woman" name="usrSex" value="w">
+                      <label for="woman">여자</label>
+                    </div>
+                  </div>
+                  <div class="user_input">
+                    <label for="usrPhone" class="info_r">휴대폰번호</label>
+                    <input type="tel" id="usrPhone" name="usrPhone" value="" placeholder="- 없이 입력하세요" required />
+                  </div>
+                  <div class="user_input">
+                    <label for="usrNum">전화번호</label>
+                    <input type="tel" id="usrNum" name="usrNum" value="" placeholder="- 없이 입력하세요" />
+                  </div>
+                </fieldset>
+                <fieldset class="form_button">
+                  <legend><span class="blind">회원 가입 버튼 및 이전으로</span></legend>
+                  <button type="button" class="prev_btn">이전으로</button>
+                  <button type="submit" class="submit_btn">회원가입</button>
+                </fieldset>
+              </form>
+            </div>
+          </div> <!-- join_inner -->
+        </div> <!-- join_div -->
+      </div> <!-- join_wrap -->
     </article>
     <footer id="footBox">
       <div class="area_foot">

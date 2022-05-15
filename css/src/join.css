@@ -1,0 +1,61 @@
+/* join.css */
+
+@import url("../common/page/a_wrap.css");
+@import url("../common/page/b_headBox.css");
+@import url("../common/page/b_footBox.css");
+
+@media all {
+  #joinBox {width: 100%; height:auto; padding-bottom:100px;}
+  .page_banner {background: url("../../img/join/banner.jpg");}
+  .join_div {width: 960px; height: auto; margin:auto; background-color: var(--white);}
+  .join_inner {width: 640px; height:auto; margin:auto;}
+
+  .join_title {width: 100%; height:auto; margin-bottom : 20px}
+  .join_title h3 {padding:80px 0 20px 0; font-size:22px; letter-spacing: 1px; text-align: center;}
+  .join_title p {font-size:12px; padding-right:10px; text-align: right}
+
+  .join_form {width: 100%; height:auto}
+  form, fieldset {position:relative; margin:0; padding:0; border:0;}
+  legend {display: block; width: 0; height: 0; position:absolute; z-index: -1; overflow: hidden;}
+  .form_input {width:100%; height:auto; margin-bottom :20px;}
+  .form_button {width: 420px; height:auto; margin:auto; padding-bottom:80px}
+  .user_input {width: 100%; height:auto; margin-bottom:10px}
+  .user_input input {display:inline-block; width: 480px; height: 40px; padding:10px; box-sizing: border-box;}
+  .user_input label {display:inline-block; width: 150px; height: 40px; font-size:15px; color:var(--light_gray_02)}
+  .user_input p {margin-left:160px; font-size:12px}
+  .user_input .p_red {color:var(--red)}
+
+  .usr_birth .p_label, .usr_sex .p_label {display: inline-block; width: 150px; height: 40px; margin:0; font-size:15px; color:var(--light_gray_02);}
+  .usr_birth > div, .usr_sex > div {display: inline-block; width:130px; height:auto; }
+  .usr_birth select {width: 80px; height: 40px; padding:10px; box-sizing: border-box;}
+  .usr_birth label {width: 34px;height: 34px; margin-left:10px;}
+  .usr_sex {position:relative; }
+  .usr_sex_w {left:40%;}
+  .usr_sex input {display:none}
+  input[id="man"] + label:before,
+  input[id="woman"] + label:before {
+    content:""; display:inline-block; width:20px; height:20px;
+    margin-right:6px; line-height: 40px;
+    background: url("../../img/join/radio-unbtn.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .usr_sex div {width: 80px;}
+  .usr_sex label {width: 100%;}
+  input[id="man"]:checked + label:before,
+  input[id="woman"]:checked + label:before {
+    content:""; display:inline-block; width:20px; height:20px; margin-right:6px; 
+    background: url("../../img/join/radio-btn.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .info_r {position: relative;}
+  .info_r:before {content:"*"; position:absolute; top:0; left:-10px; font-size: 12px;}
+
+  /* form_button */
+  .form_button button {width: 200px; height: 55px;}
+  .form_button .prev_btn {margin-right:15px; border : 1px solid var(--brown_01); color : var(--brown_01)}
+  .form_button .submit_btn {background-color : var(--brown_01); font-weight:600; color : var(--white)}
+}
