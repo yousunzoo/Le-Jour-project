@@ -1,0 +1,75 @@
+/* c_footTopBox.css */
+
+@media all {
+/* #footTopBox----------------------------------------- */
+#footTopBox {
+  position: relative;
+  width: 100%; height: auto;
+  background-color: var(--main_02);
+}
+
+.footTopDiv {
+  width: 1200px; height:250px;
+  padding: 130px 0; margin:auto;
+}
+
+.footTop_left { float:left; width:760px; height:100%;}
+.footTop_right {
+  float:right;
+  width:350px; height:100%;
+  background: url("../../../img/main_page/footTopBox/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.notice {
+  width: 100%; height:70px;
+  padding: 20px 2px; margin-bottom:20px;
+  box-sizing: border-box;
+  border-top : 1px solid var(--brown_01);
+  border-bottom : 1px solid var(--brown_01);
+  line-height:28px; color : var(--black_01)
+}
+.notice h3 {
+  display: inline-block; width:150px; height:100%;
+  font-size: var(--title_02); font-weight: 700; text-transform: uppercase;
+}
+.notice a {
+  display: inline-block; width:600px; height:100%;
+  font-size: var(--button_01); letter-spacing: -1px;
+}
+.notice a i { float:right; font-size : 20px; line-height:28px }
+
+/* info_left */
+.cs_box {
+  float:left; width: 377px; height:160px;
+  padding:10px 0; border-right:1px solid var(--brown_01); box-sizing: border-box;
+  color: var(--brown_01)
+}
+
+.info_tit { margin-bottom:4px; font-size : 18px; }
+.cs_box .cs_num { margin-bottom:10px; font-size : 40px; font-weight: 700;}
+.cs_hour {
+  margin-bottom:10px; letter-spacing: -1px; line-height:1.6;
+}
+.cs_box .cs_hour > span { padding-left:5px; }
+
+/* info_right */
+.ac_box {
+  float:right; width: 377px; height:160px;
+  padding: 10px 0 10px 20px; box-sizing: border-box; color: var(--brown_01)
+}
+
+.account_num { margin:6px 0 10px 0; font-size:var(--account_02); font-weight: 700; }
+
+.ac_btn a {
+  display: block; width: 165px; height: 44px;
+  padding:0 20px; box-sizing: border-box;
+  font-size : var(--button_01); line-height: 44px; text-transform: uppercase;
+}
+
+.ac_btn a i { float:right; font-size: 18px; line-height:44px; }
+.btn_cs { float:left; background-color: var(--yellow); color:var(--brown_01)}
+.btn_faq { float:right; background-color: var(--brown_01); color:var(--main_01)}  
+
+}

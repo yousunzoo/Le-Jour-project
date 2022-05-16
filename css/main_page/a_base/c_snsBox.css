@@ -1,0 +1,21 @@
+/* c_snsBox.css */
+
+@media all {
+/* #snsBox----------------------------------------- */
+#snsBox {
+  position: relative;
+  width: 100%; height: auto;
+  margin-bottom : 100px;
+}
+
+.insta_list {
+  width: 1000px;
+  margin:auto;
+}
+.insta_list li {
+  float:left; margin-right : 20px;
+}
+.insta_list img {
+  width: 150px; height: 150px;
+}
+}
