@@ -1,0 +1,12 @@
+/* a_base.css */
+
+@import url("../common/page/a_wrap.css");
+@import url("../common/page/b_headBox.css");
+@import url("../common/page/b_footBox.css");
+@import url("../main_page/a_base/c_slideBox.css");
+@import url("../main_page/a_base/c_productBox.css");
+@import url("../main_page/a_base/c_eventBox.css");
+@import url("../main_page/a_base/c_reviewBox.css");
+@import url("../main_page/a_base/c_snsBox.css");
+@import url("../main_page/a_base/c_footTopBox.css");
+
