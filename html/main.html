@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
-
   <link rel="stylesheet" href="../css/common/reset.css">
   <link rel="stylesheet" href="../css/common/common.css">
   <link rel="stylesheet" href="../css/common/variable.css">
@@ -34,28 +33,38 @@
           </button>
         </div>
         <div id="navBox">
-          <h2 class="blind">page navigation</h2>
-          <div class="gnb_top">
-            <h3 class="blind">상단 네비게이션</h3>
-            <ul class="clearfix first_margin">
-              <li class="blind_area"><a href="#"><span>search</span><i class="fa-solid fa-magnifying-glass"></i></a></li>
-              <li><a href="#"><span>cart</span><i class="fa-solid fa-cart-shopping"></i></a></li>
-              <li><a href="./join.html">join</a></li>
-              <li><a href="./login.html">log in</a></li>
-            </ul>
+          <div class="nav_wrap">
+            <h2 class="blind">page navigation</h2>
+            <div class="close_btn blind_area">
+              <button>
+                <span>close button</span>
+              </button>
+            </div>
+            <div class="gnb_top">
+              <h3 class="blind">상단 네비게이션</h3>
+              <ul class="clearfix first_margin">
+                <li><a href="./join.html">join</a></li>
+                <li><a href="./login.html">log in</a></li>
+                <li><a href="#"><span>cart</span><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="blind_area handhelds_h"><a href="#"><span>search</span><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                
+                
+              </ul>
+            </div>
+            <div class="gnb_bottom">
+              <h3 class="blind">하단 네비게이션</h3>
+              <ul class="clearfix">
+                <li><a href="./brand_story.html">brand story</a></li>
+                <li><a href="#">product</a></li>
+                <li><a href="#">review</a></li>
+                <li><a href="#">q&a</a></li>
+                <li><a href="./notice.html">notice</a></li>
+                <li><a href="./event.html">event</a></li>
+                <li><a href="./product_guide.html">product guide</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="gnb_bottom">
-            <h3 class="blind">하단 네비게이션</h3>
-            <ul class="clearfix">
-              <li><a href="./brand_story.html">brand story</a></li>
-              <li><a href="#">product</a></li>
-              <li><a href="#">review</a></li>
-              <li><a href="#">q&a</a></li>
-              <li><a href="./notice.html">notice</a></li>
-              <li><a href="./event.html">event</a></li>
-              <li><a href="#">membership</a></li>
-            </ul>
-          </div>
+          <div class="nav_bg"></div>
         </div>
 
       </div>
@@ -67,24 +76,22 @@
         <div class="main_slide_wrap">
           <div class="main_slider clearfix">
             <div id="slide01" class="main_slide">
-              <img src="../img/main_page/slideBox/slide_01.jpg" alt="본문 슬라이드 배너 01">
             </div>
             <div id="slide02" class="main_slide">
-              <img src="../img/main_page/slideBox/slide_02.jpg" alt="본문 슬라이드 배너 02">
             </div>
             <div id="slide03" class="main_slide">
-              <img src="../img/main_page/slideBox/slide_03.jpg" alt="본문 슬라이드 배너 03">
             </div>
             <div id="slide04" class="main_slide">
-              <img src="../img/main_page/slideBox/slide_04.jpg" alt="본문 슬라이드 배너 04">
             </div>
             <div id="slide05" class="main_slide">
-              <img src="../img/main_page/slideBox/slide_05.jpg" alt="본문 슬라이드 배너 05">
             </div>
           </div>
         </div>
         <div class="slide_content">
-          <img src="../img/main_page/slideBox/mouse.png" alt="마우스 이미지">
+          <div class="mouse_img">
+          <div class="scroll"></div>
+          <div class="mouse"></div>
+          </div>
           <p>discover more</p>
         </div>
       </div>
@@ -276,13 +283,10 @@
       <div class="event_slide_wrap">
         <div class="event_slider clearfix">
           <div id="event01" class="event_slide">
-            <img src="../img/main_page/eventBox/event_01.jpg" alt="이벤트 슬라이드 배너 01">
           </div>
           <div id="event02" class="event_slide">
-            <img src="../img/main_page/eventBox/event_02.jpg" alt="이벤트 슬라이드 배너 02">
           </div>
           <div id="event03" class="event_slide">
-            <img src="../img/main_page/eventBox/event_03.jpg" alt="이벤트 슬라이드 배너 03">
           </div>
           </div>
         </div>
@@ -349,6 +353,42 @@
           </a>
           </li>
         </ul>
+        <div class="review_modal_window">
+          <div class="modal_data">
+            <div class="close_btn">
+              <button type="button">
+                <img src="../img/main_page/reviewBox/rv_close.png" alt="review modal close">
+              </button>
+            </div> <!-- close_btn -->
+            
+          <div class="modal_content">
+            <div class="modal_img">
+            </div>
+            <div class="modal_con clearfix">
+              <div class="review_goods">
+                <div class="goods_img"></div>
+                <div class="goods_star">
+                  <p>리뷰개수 200</p>
+                  <p>	&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                </div>
+              </div> <!--review_goods -->
+              <div class="goods_content">
+                <p class="goods_tit">
+                  르주르 삶는 클리닝
+                </p>
+                <div class="review_text">
+                어릴때부터 늘 엄마께서 수건은 무조건 푹푹 삶아서 세탁하셨어요. 그래서 저도 수건과 행주는 항상 삶아서 썼답니다. 삶아서 세탁하고나면 뿌듯하고 찝찝하지않아서 좋은데 딱 한가지 단점은 무겁게 두손으로 들고 가스불에 올렸다 내렸다, 세탁기에 또 옮겨넣고..ㅋㅋㅋ 손목이 요새 아파서 그런지 삶는게 이젠 귀찮고 힘들게 느껴지더라구요. 그러던중에 르주르에서 요걸 발견했네요. 물에넣고 불리기만하면 된다니 ㅠㅠ 저 왕창 샀으니 진짜 잘 써볼게요! ^^
+                </div>
+              </div>
+              <div class="goods_recommend">
+                <p>추천 <span class="now_re">2</span></p>
+                <button type="button">추천하기</button>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="modal_bg"></div>
+        </div>
       </div>
     </article>
 
@@ -367,6 +407,7 @@
     <article id="footTopBox">
       <h2 class="blind">footTop</h2>
       <div class="footTopDiv clearfix">
+      <div class="footTop_right blind_area"><a href="./product_guide.html"><span>product_guide</span></a></div>
       <div class="footTop_left">
         <div class="notice">
           <h3>notice</h3>
@@ -400,7 +441,6 @@
           </div>
         </div>
       </div>
-      <div class="footTop_right blind_area"><a href="./product_guide.html"><span>product_guide</span></a></div>
       </div>
     </article>
 
@@ -442,9 +482,9 @@
         </div>
         <div class="ft_icons">
           <ul class="social last_margin clearfix blind_area">
-            <li><a href="#"><span>instagram</span></a></li>
-            <li><a href="#"><span>facebook</span></a></li>
-            <li><a href="#"><span>youtube</span></a></li>
+            <li><a href="https://www.instagram.com/lejour_official/"><span>instagram</span></a></li>
+            <li><a href="https://www.facebook.com/lejour.official"><span>facebook</span></a></li>
+            <li><a href="https://www.youtube.com/channel/UC3U5n0eaLCwReNUVG3NuMHA"><span>youtube</span></a></li>
           </ul>
           <div class="ft_certify blind_area">
             <li><a href="#"><span>inipay</span></a></li>
