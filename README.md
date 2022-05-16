@@ -27,10 +27,11 @@
     3. b_footBox.css
 
 * /main_page (메인페이지 rwd css)
-  1. smartphone.css
-  2. tablet.css
-  3. laptop.css
-  4. pc.css
+  1. a_base.css
+  2. b_smartphone.css
+  3. c_tablet.css
+  4. d_laptop.css
+  
 * /sub_pages
   * /join
     1. joinBox.css
