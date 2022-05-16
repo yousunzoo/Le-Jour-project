@@ -1,0 +1,41 @@
+/* d_laptop.css */
+@media all and (min-width:1024px) and (max-width:1439px) {
+/* #headBox */
+#headBox {padding:20px 30px;}
+
+/* #productBox */
+.product_wrap {width: 94%;}
+.product_list {width: 900px; height:480px; overflow:hidden;}
+
+/* #reviewBox */
+.review_slide_wrap {margin-bottom:80px;}
+.review_btns {position: absolute; top:105%; left:50%; transform: translateX(-50%); width: 80%;}
+
+
+/* footTopBox */
+.footTopDiv {width: 760px; height:550px; padding-top:60px}
+.footTop_left {position:relative; float:none; width: 760px; height:260px}
+.footTop_right {float:none; width: 690px; height:210px; margin:auto; margin-bottom:40px;
+  background: url("../../img/main_page_rwd/tablet/product_guide.png");  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;}
+
+/* info_left */
+.cs_box {width: 50%; height:200px; padding-right:10px; word-break: keep-all;}
+.info_tit {font-size: 15px; font-weight: 700;}
+.cs_box .cs_num {font-size: 26px;}
+.cs_hour {font-size:14px}
+  
+/* info_right */
+.ac_box {width: 50%; height:200px}
+.account_num {font-size:17px; margin-bottom:20px;}
+
+/* footBox */
+.area_foot {width: 92%; height:auto; padding :60px 0}
+.footer_top > div {margin-bottom:20px}
+.footer_top .footer_logo {width: 100%; margin-bottom:40px}
+.footer_logo .info_logo {margin-bottom:10px}
+.footer_bottom .ft_txt .span_line:before {display: none;}
+.footer_bottom .ft_txt span {padding-left:0;}
+}

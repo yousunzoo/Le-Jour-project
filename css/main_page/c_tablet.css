@@ -1,0 +1,123 @@
+/* c_tablet.css */
+/* 기준 디바이스 크기 : 768px */
+@media all and (min-width:768px) and (max-width:1023px) {
+  #wrap {min-height:100vh; overflow: hidden;}
+  .area_title {font-size:28px; letter-spacing: 0;}
+  #headBox {height: 70px; padding:20px;}
+  .area_head {height: 100%; }
+  #logo {padding:0;}
+  .nav_btn {display: block; }
+
+  #navBox {
+    display: none;
+    position:absolute; top:0; right:0;  z-index: 2500}
+  .nav_wrap {width: 260px; height: 540px; 
+    padding: 60px 30px; box-sizing: border-box;
+    background-color: var(--light_beige);}
+
+  #navBox .close_btn {display:block;}
+
+  .gnb_top li {float:none; margin-bottom:20px; 
+    font-size: 15px; font-weight:700; color:var(--brown_01); text-transform: capitalize;}
+    .gnb_top li i {display: none;}
+    .handhelds_h {display: none;}
+  .gnb_top li:before {display: none;}
+
+  .gnb_bottom li {float:none; margin-bottom:30px; 
+  font-size:17px; color:var(--brown_01); font-weight:700; text-transform: capitalize; }
+
+  .nav_bg {
+    position:fixed; top:0; left:0; z-index:-1;
+    width: 100%; height: 100%; background-color: var(--black_01); opacity:50%}
+
+  /* #slideBox */
+  #slideBox {height: 1370px;}
+
+
+  /* #productBox */
+
+  /* product_tab */
+  .product_tab_list {width: 735px;}
+  .product_tab_list button span {
+    padding:0 10px;}
+  .product_btns {position:absolute;
+    top:-30px; right:10px;
+    width: 80px; height: 30px; font-size:20px;}
+
+   /* product_list */
+   .product_wrap {position:relative; width: 96%;}
+   .product_list {width: 100%; margin-bottom:40px;}
+   .product_list li {width: 360px; margin-right:16px; margin-bottom:80px;}
+   .product_list li:nth-child(2n) {margin-right: 0;}
+   .product_list .img_box { height:420px}
+
+   .item_name_en {font-size: 12px;}
+   .item_name_ko {font-size: 14px;}
+
+   .product_list .img_box .card_link {
+    display:block; bottom:-39%; width: 92%;
+  }
+  .img_box .card_link a {width: 200px; font-size:11px;}
+  .img_box .card_link a i {margin-right:20px}
+  .img_box .card_link button {width:20px; margin-left:30px}
+
+  
+    /* product_wrap .more_btn */
+    .product_wrap .more_btn {background-color: var(--yellow);}
+    .product_wrap .more_btn a {color:var(--brown_01)}
+
+
+    /* #eventBox */
+    .event_btns {bottom:30px; left:0; right:0; margin:auto; width: 250px;}
+    .event_slide{height: 768px;}
+
+    /* reviewBox */
+    #reviewBox {height:auto;}
+    .review_btns {display: none;}
+  
+    .review_list {width: 640px;} 
+    .review_list li {width: 200px;height: 340px;}
+    .review_list li .review_img {height: 200px;}
+    .review_list li .item_name_ko,
+    .review_list li .item_name_en {display: none;}
+    .review_product img {left:0;}
+  
+  /* snsBox */
+  .insta_list {width:740px}
+  .insta_list li {margin : 0 8px 8px 0}
+  .insta_list li:nth-child(3n) {margin-right:0}
+  .insta_list img {width: 240px; height: 240px;}
+
+  /* footTopBox */
+  .footTopDiv {width: 90%; height:550px; padding-top:40px}
+  .footTop_left {position:relative; float:none; width: 100%; height:260px}
+  .footTop_right {float:none; width: 690px; height:210px; margin:auto; margin-bottom:40px;
+  background: url("../../img/main_page_rwd/tablet/product_guide.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;}
+  .notice {display: none;}
+
+    /* info_left */
+    .cs_box {width: 50%; height:200px; padding-right:10px; word-break: keep-all;}
+    .info_tit {font-size: 15px; font-weight: 700;}
+    .cs_box .cs_num {font-size: 26px;}
+    .cs_hour {font-size:14px}
+  
+    /* info_right */
+    .ac_box {width: 50%; height:200px}
+    .account_num {font-size:17px; margin-bottom:20px;}
+    .ac_btn {
+      position:absolute; left:0; bottom:0;
+      width: 100%;}
+    .ac_btn a {width: 48%;}
+    .info_tit {margin-bottom:20px}
+
+  /* footBox */
+  .area_foot {width: 92%; height:auto; padding :60px 0}
+  .footer_top > div {margin-bottom:20px}
+  .footer_top .footer_logo {width: 100%; margin-bottom:40px}
+  .footer_logo .info_logo {margin-bottom:10px}
+  .footer_bottom .ft_txt .span_line:before {display: none;}
+  .footer_bottom .ft_txt span {padding-left:0;}
+  }
