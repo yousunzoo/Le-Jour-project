@@ -27,14 +27,18 @@
 }
 
 /* review_list */
+
+.review_slide_area {
+  position:relative;
+  width: 1120px; height:100%; overflow: hidden; margin:auto}
 .review_list {
-  position:absolute; left:50%; transform:translateX(-50%);
+  position:absolute;
   width: calc(3*380px); height:100%;
-  margin:auto;
+  margin:auto; text-align: center;
 }
 
 .review_list li {
-  float:left;
+  display: inline-block;
   width: 360px; height:100%;
   margin-right:20px;
   background-color: #fff;
@@ -42,26 +46,12 @@
 
 .review_list li .review_img {
   width: 100%; height:250px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
-.review_list li:nth-child(1) .review_img {
-  background: url("../../../img/main_page/reviewBox/review_01.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-}
-.review_list li:nth-child(2) .review_img {
-  background: url("../../../img/main_page/reviewBox/review_02.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-}
-.review_list li:nth-child(3) .review_img {
-  background: url("../../../img/main_page/reviewBox/review_03.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-}
+
 
 .review_content {
   width: 100%; height:160px;
@@ -69,16 +59,16 @@
   box-sizing: border-box;
 }
 .review_con {
-  margin-bottom:10px;
-  font-size: var(--foot_content_01);
-  line-height:1.6;
+  margin-bottom:10px; width: 100%; height: 40px; overflow-y:hidden;
+  font-size: 14px;
+  line-height:1.6; text-align: left;
   letter-spacing: -1px;
 }
 
 .review_product {
   position:relative;
   border-top : 1px solid var(--border_gray);
-  padding-top:10px;
+  padding-top:10px; text-align: left;
 }
 .review_product img {
   position:absolute;

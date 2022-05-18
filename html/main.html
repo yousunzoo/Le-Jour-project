@@ -72,7 +72,7 @@
 
     <section id="slideBox">
       <h2 class="blind">main slide 영역</h2>
-      <div class="main_slide">
+      <div class="main_slide_area">
         <div class="main_slide_wrap">
           <div class="main_slider clearfix">
             <div id="slide01" class="main_slide">
@@ -270,6 +270,7 @@
 
     <article id="eventBox">
     <h2 class="area_title">event</h2>
+    <div class="slide_area">
     <div class="event_btns blind_area">
       <button type="button" class="next"><span>next</span></button>
       <button type="button" class="prev"><span>prev</span></button>
@@ -291,6 +292,7 @@
           </div>
         </div>
       </div>
+    </div>
     </article>
 
     <article id="reviewBox">
@@ -306,53 +308,10 @@
             <i class="fa-solid fa-chevron-left"></i>
           </button>
         </div>
-        <ul class="review_list clearfix last_margin">
-          <li>
-            <a href="#">
-            <div class="review_img">
-              <!-- image 영역 -->
-            </div>
-            <div class="review_content">
-              <p class="review_con">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, explicabo.</p>
-              <div class="review_product">
-                <p class="item_name_en">Le Jour family set</p>
-                <p class="item_name_ko">르주르 패밀리 세트</p>
-                <img src="../img/main_page/reviewBox/star-fill.png" alt="별점 만점">
-              </div>
-            </div>
-          </a>
-          </li>
-          <li>
-            <a href="#">
-            <div class="review_img">
-              <!-- image 영역 -->
-            </div>
-            <div class="review_content">
-              <p class="review_con">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, explicabo.</p>
-              <div class="review_product">
-                <p class="item_name_en">Le Jour family set</p>
-                <p class="item_name_ko">르주르 패밀리 세트</p>
-                <img src="../img/main_page/reviewBox/star-fill.png" alt="별점 만점">
-              </div>
-            </div>
-          </a>
-          </li>
-          <li>
-            <a href="#">
-            <div class="review_img">
-              <!-- image 영역 -->
-            </div>
-            <div class="review_content">
-              <p class="review_con">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, explicabo.</p>
-              <div class="review_product">
-                <p class="item_name_en">Le Jour family set</p>
-                <p class="item_name_ko">르주르 패밀리 세트</p>
-                <img src="../img/main_page/reviewBox/star-fill.png" alt="별점 만점">
-              </div>
-            </div>
-          </a>
-          </li>
-        </ul>
+        <div class="review_slide_area">
+          <ul class="review_list clearfix last_margin">
+          </ul>
+        </div>
         <div class="review_modal_window">
           <div class="modal_data">
             <div class="close_btn">
@@ -477,7 +436,7 @@
           <ul class="footer_ul">
             <li class="ft_txt"><a href="./notice.html">공지사항</a></li>
             <li class="ft_txt"><a href="#">FAQ</a></li>
-            <li class="ft_txt"><a href="#">Q&A</a></li>
+            <li class="ft_txt"><a href="#"><abbr title="question and answer">Q&amp;A</abbr></a></li>
           </ul>
         </div>
         <div class="ft_icons">
@@ -491,11 +450,11 @@
           </div>
         </div>
       </div>
-      <div class="footer_bottom">
-        <li class="ft_txt"><span class="span_line">르주르주식회사</span><span>대표자 : 김건우</span></li>
-        <li class="ft_txt"><span class="span_line">개인정보취급관리자 : 김종석</span><span>이메일 : lejour90@naver.com</span></li>
-        <li class="ft_txt company_ad"><span class="span_line">주소 : 광주광역시 광산구 수완로73번길 17 3층 301호(수완동, 리코빌딩)</span><span class="span_line">사업자등록번호 : 412-87-00709</span><span>통신판매업신고번호 : 제 2017-광주광산-0506 호</span></li>
-      </div>
+      <address class="footer_address">
+        <p class="ft_txt"><span class="span_line">르주르주식회사</span><span>대표자 : 김건우</span></p>
+        <p class="ft_txt"><span class="span_line">개인정보취급관리자 : 김종석</span><span>이메일 : lejour90@naver.com</span></p>
+        <p class="ft_txt company_ad"><span class="span_line">주소 : 광주광역시 광산구 수완로73번길 17 3층 301호(수완동, 리코빌딩)</span><span class="span_line">사업자등록번호 : 412-87-00709</span><span>통신판매업신고번호 : 제 2017-광주광산-0506 호</span></p>
+      </address>
       </div>
     </footer>
 
@@ -504,5 +463,9 @@
   <script src="../js/common/modernizr-custom.js"></script>
   <script src="../js/common/jquery-3.6.0.min.js"></script>
   <script src="../js/common/jquery-ui.min.js"></script>
+  <script src="../js/src/commonFile/headBox_handhelds.js"></script>
+  <script src="../js/src/main_page/slideBox.js"></script>
+  <script src="../js/src/main_page/eventBox.js"></script>
+  <script src="../js/src/main_page/reviewBox.js"></script>
 </body>
 </html>

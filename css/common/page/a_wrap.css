@@ -1,6 +1,8 @@
 /* a_wrap.css */
 
 @media all {
+  body {width: 100%; 
+    overflow-x:hidden;}
   #wrap {
     width: 100vw;
     min-width : 320px;

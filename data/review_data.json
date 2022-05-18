@@ -1,0 +1,47 @@
+[
+ {
+   "id": 1,
+   "productKo": "르주르 삶는 클리닝",
+   "productEn": "Le Jour boil-wash cleaning",
+   "content": "어릴때부터 늘 엄마께서 수건은 무조건 푹푹 삶아서 세탁하셨어요. 그래서 저도 수건과 행주는 항상 삶아서 썼답니다. 삶아서 세탁하고나면 뿌듯하고 찝찝하지않아서 좋은데 딱 한가지 단점은 무겁게 두손으로 들고 가스불에 올렸다 내렸다, 세탁기에 또 옮겨넣고..ㅋㅋㅋ 손목이 요새 아파서 그런지 삶는게 이젠 귀찮고 힘들게 느껴지더라구요. 그러던중에 르주르에서 요걸 발견했네요. 물에넣고 불리기만하면 된다니 ㅠㅠ 저 왕창 샀으니 진짜 잘 써볼게요! ^^",
+   "image": "review_01.jpg",
+   "alternative": "review 01 image",
+   "product_img": "product_01.png"
+ },
+ {
+   "id": 2,
+   "productKo": "르주르 유아 액체세제",
+   "productEn": "Le Jour laundry detergent for baby",
+   "content": "친구네 애기 옷에서 너무 좋은향이 나서 물어보고 구매했었는데 가격때문에 좀 그랬지만 향이 너무너무 좋아서 떨어지면 다른상품으로 바꿀까 고민하다가 계속 주문하게되네요~^^",
+   "image": "review_02.jpg",
+   "alternative": "review 02 image",
+   "product_img": "product_02.png"
+ },
+ {
+   "id": 3,
+   "productKo": "르주르 베이비 세트",
+   "productEn": "Le Jour baby set",
+   "content": "재구매할거에요. 다른 제품과 함께 사용해서인지 약 7개월 정도를 썼어요. 2개월 정도 다른 제품만을 사용중인데 자꾸 생각나요. 다시 구매할거고 선물도 할거에요~",
+   "image": "review_03.jpg",
+   "alternative": "review 03 image",
+   "product_img": "product_03.png"
+ },
+ {
+   "id": 4,
+   "productKo": "르주르 욕실 클렌저",
+   "productEn": "Le Jour bathroom cleanser",
+   "content": "믿쓰 세제 르주르 욕실 수전 닦았는데 정말 깨끗하게 잘 닦여서 놀랐어요. 저는 물 떄가 싫어서 세면대도 사용 후 바로 물기 닦아주는데 요 제품 사용해보니 물 때 걱정을 좀 덜겠어요.",
+   "image": "review_04.jpg",
+   "alternative": "review 04 image",
+   "product_img": "product_04.png"
+ },
+ {
+   "id": 5,
+   "productKo": "순비누분 유아 액체세제 (프렌치 라벤더)",
+   "productEn": "Pure laundry detergent for baby",
+   "content": "향이 너무 좋아요 친구네 애기 옷에서 너무 좋은향이 나서 물어보고 구매했었는데 가격때문에 좀 그랬지만 향이 너무너무 좋아서 떨어지면 다른상품으로 바꿀까 고민하다가 계속 주문하게되네요~^^",
+   "image": "review_05.jpg",
+   "alternative": "review 05 image",
+   "product_img": "product_05.png"
+ }
+]

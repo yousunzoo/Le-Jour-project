@@ -11,10 +11,23 @@
     }
     .product_tab_list {
       width: 960px; height:auto; margin:auto;
+      letter-spacing: -10px; text-align: center;
     }
     .product_tab_list li {
-      float:left;
+      display:inline-block; 
+      position:relative;
+      padding:0 0.2rem;
     }
+
+    .product_tab_list li::before {
+      content:""; display:block; 
+      position:absolute; top:0; bottom:0; right:0; margin:auto;
+      width: 0; height: 30%;
+      border-right: 1px solid var(--brown_01)
+    }
+
+    .product_tab_list li:last-child::before {display: none;}
+
     .product_tab_list button {
       padding:16px 2px;
     }
@@ -22,13 +35,9 @@
     .product_tab_list button span {
       padding:0 24px;
       color: var(--black_01);
-      border-right:1px solid var(--brown_01);
       letter-spacing: -1px;
     }
 
-    .product_tab_list li:last-of-type span {
-      border-right:none;
-    }
 
     .product_tab_list .on button {
       border-bottom:2px solid var(--brown_01);

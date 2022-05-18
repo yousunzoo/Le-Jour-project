@@ -40,7 +40,9 @@
   /* #productBox */
 
     /* product_tab */
-    .product_tab_list {width: 735px; padding:0 10px;}
+    .product_tab_list {width: 735px; padding:0 10px; text-align: center;}
+    .product_tab_list li {float:none; display:inline-block;}
+
     .product_tab_list button span {
       padding:0 10px;}
 

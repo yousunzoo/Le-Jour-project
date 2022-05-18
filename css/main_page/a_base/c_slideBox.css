@@ -6,36 +6,33 @@
     position:relative;
     width: 100%; height:800px;
   }
-  .main_slide{
+
+  /* main_slide 영역 */
+  .main_slide_area {
     width: 100%; height: 100%;
   }
+
   .main_slide_wrap {
+    position:relative;
     width: 100%; height:100%;
     overflow:hidden;
   }
-  .main_slider {width: 500%; height:100%}
+  .main_slider {position:absolute; width: 500%; height:100%}
+
   .main_slider .main_slide {
-    float:left; width: 20%; height: 100%;}
-  .main_slide:nth-child(1) {background: url("../../../img/main_page/slideBox/slide_01.jpg");
+    float:left; width: 20%; height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center}
-  .main_slide:nth-child(2) {background: url("../../../img/main_page/slideBox/slide_02.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center}
-  .main_slide:nth-child(3) {background: url("../../../img/main_page/slideBox/slide_03.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center}
-  .main_slide:nth-child(4) {background: url("../../../img/main_page/slideBox/slide_04.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center}
-  .main_slide:nth-child(5) {background: url("../../../img/main_page/slideBox/slide_05.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center}
+
+  #slide01 {background-image: url("../../../img/main_page/slideBox/slide_01.jpg");}
+  #slide02 {background-image: url("../../../img/main_page/slideBox/slide_02.jpg");}
+  #slide03 {background-image: url("../../../img/main_page/slideBox/slide_03.jpg");}
+  #slide04 {background-image: url("../../../img/main_page/slideBox/slide_04.jpg");}
+  #slide05 {background-image: url("../../../img/main_page/slideBox/slide_05.jpg");}
+   
+  
+  /* discover_more 영역 */
   .slide_content {
     position:absolute; bottom : 10%; left:0; right:0; margin:auto;
     text-align: center; font-size: 13px; color:#fff; font-weight:700;

@@ -62,7 +62,7 @@
   4. modernizr-custom.js
 * /src
   * /commonFile
-    1. haedBox_handhelds.js
+    1. headBox_handhelds.js - #navBox fadeIn(),fadeOut()
   * /main_page
     1. slideBox.js
     2. menuBox.js

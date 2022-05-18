@@ -2,9 +2,7 @@
    /* #headBox----------------------------------------- */
    #headBox {
     position:fixed; top:0; left:0; z-index:1000;
-    width: 100vw; height:auto;
-    min-height:70px; max-height: 100px;
-    padding:20px 170px;
+    width: 100%; height:auto;
     box-sizing: border-box;
     background-color: #fff;
   }
