@@ -71,7 +71,7 @@ $.ajax({
   var productMenuSetFn = function(k){
     tabMenuFn(k);
     cardUl.empty();
-    var productListSet = '<li><a href="#"><div class="img_box"><div class="card_img"></div><div class="card_img_bg"></div></div><div class="card_con"><dl class="card_content"><dt><p class="item_name_en">Le Jour family set</p><p class="item_name_ko"></p></dt><dd><span class="origin_price"></span><span class="arrow"> &#8594; </span><span class="now_price"></span></dd></dl></div></a><div class="card_link blind_area clearfix"><a href="#"><i class="fa-regular fa-credit-card"></i>바로구매</a><button type="button" class="wish"><i class="fa-regular fa-heart"></i><span>위시리스트</span></button><button type="button" class="cart"><i class="fa-solid fa-cart-shopping"></i><span>장바구니</span></button></div></li>'
+    var productListSet = '<li><a href="#"><div class="img_box"><div class="card_img"></div><div class="card_img_bg"></div></div><div class="card_con"><dl class="card_content"><dt><p class="item_name_en">Le Jour family set</p><p class="item_name_ko"></p></dt><dd><span class="origin_price"></span><span class="arrow"> &#8594; </span><span class="now_price"></span></dd></dl></div></a><div class="card_link blind_area clearfix"><div class="card_link_bg"></div><a href="#"><i class="fa-regular fa-credit-card"></i>바로구매</a><button type="button" class="wish"><i class="fa-regular fa-heart"></i><span>위시리스트</span></button><button type="button" class="cart"><i class="fa-solid fa-cart-shopping"></i><span>장바구니</span></button></div></li>'
 
     var j=0;
     var tabSetLen = tabMenuSet.length;
@@ -95,13 +95,19 @@ $.ajax({
         liIndex.find('.arrow').empty()
       }
     }
+    var li = cardUl.find('li');
+    var liLen = li.length;
+    var liW = li.outerWidth(true);
+
+    cardUl.css({'width':liW*liLen+'px'}) 
+    cardArea.css({'width':liW*4+'px'})
   }
+
 
   productMenuSetFn(0);
 
   // 4. 탭메뉴 처리 설정
   
-  var cardLi = cardUl.find('li');
   
   tabBtn.on('click', function(e){
     e.preventDefault();
@@ -110,7 +116,10 @@ $.ajax({
     tabBtn.parent().eq(n).siblings().removeClass('on');
 
     productMenuSetFn(n);
+    cardUl.css({'marginLeft':0})
   })
+
+  var cardLi = cardUl.find('li');
 
   cardLi.on('mouseenter', function(e){
     $(this).find('.card_link').slideDown(300);
@@ -120,6 +129,47 @@ $.ajax({
     $(this).find('.card_link').slideUp(300);
   })
 
+  // 변수
+  var productBox = $('#productBox')
+  var btnArea = productBox.find('.product_btns');
+  var slideBtn = btnArea.children('button')
+  var nextBtn = btnArea.children('.next')
+  var prevBtn = btnArea.children('.prev')
+  var cardUl = productBox.find('.product_list');
+  var cardLi = cardUl.children('li');
+  var liW = cardLi.outerWidth(true);
+
+  var i = 0;
+  var liLen = cardLi.length;
+  var timed = 500;
+
+  // 함수
+  var btnClickFn = function(){
+    if ( i <= 0){
+      i=0;
+      prevBtn.hide();
+    }else if (i >= liLen-4){
+      i = liLen - 4;
+      nextBtn.hide();
+    }else{
+      slideBtn.show();
+    }
+    
+    cardUl.stop().animate({'marginLeft':(-1)*liW*i+'px'}, timed);
+  };
+
+  btnClickFn(0);
+
+  // 이벤트
+
+  slideBtn.on('click', function(e){
+    e.preventDefault();
+
+    var btnNext = $(this).hasClass('next');
+    (btnNext) ? i+=1 : i -= 1;
+    btnClickFn();
+    console.log(i);
+  })
 }) // $.ajax
 })(jQuery);
 
