@@ -25,26 +25,28 @@
 
 
 .notice {
-  width: 100%; height:70px;
-  padding: 20px 2px; margin-bottom:20px;
+  position:relative;
+  width: 100%; height:70px; margin-bottom:20px;
   box-sizing: border-box;
   border-top : 1px solid var(--brown_01);
   border-bottom : 1px solid var(--brown_01);
   line-height:28px; color : var(--black_01)
 }
 .notice h3 {
-  display: inline-block; width:150px; height:100%;
+  float:left;
+  display: block; width:150px; height:100%; line-height:70px;
   font-size: var(--title_02); font-weight: 700; text-transform: uppercase;
 }
 
-.notice_wrap {position:relative; width:100%; height:70px; overflow: hidden;}
+.notice_wrap {
+  position:relative; float:right; width:600px; height:70px; overflow: hidden;}
 .notice_slide {width:100%; height:calc(70px*1)}
 .notice_div {position:relative; width:100%; height:70px;}
 .notice a {
   display: inline-block; width:600px; height:100%;
-  font-size: var(--button_01); letter-spacing: -1px;
+  font-size: var(--button_01); letter-spacing: -1px; line-height: 70px;
 }
-.notice a i { float:right; font-size : 20px; line-height:28px }
+.notice a i { float:right; font-size : 20px; line-height: 70px; }
 
 /* info_left */
 .cs_box {
