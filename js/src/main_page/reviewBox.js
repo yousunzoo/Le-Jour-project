@@ -80,7 +80,7 @@ $.ajax({
 
       permission = false;
 
-      slideList.stop().animate({'marginLeft':(-1)*liW+'px'}, function(){
+      slideList.stop().animate({'marginLeft':(-1)*liW+'px'},1000, function(){
         var firstLi = slideLi.eq(0);
         slideList.append(firstLi); // 요소 강제이동
         slideList.css({'marginLeft':0});
@@ -100,7 +100,7 @@ $.ajax({
       slideList.prepend(liLast);
       slideList.css({'marginLeft':(-1)*liW+'px'});
 
-      slideList.stop().animate({marginLeft:0}, 500, function(){
+      slideList.stop().animate({marginLeft:0}, 1000, function(){
         slideLi = slideList.children('li');
         permission = true;
       })
@@ -118,7 +118,27 @@ $.ajax({
     prevBtnFn();
   })
 
-  // 3. 해당 li 클릭 시 해당하는 모달 창 띄우기
+
+  // 3. 자동 슬라이드 기능
+  var play;
+  var slideGoFn = function(){
+    play = setInterval(function(){
+      nextBtnFn();
+    }, 3000);
+  };
+  var slideStopFn = function(){
+    clearInterval(play);
+  }
+
+  slideGoFn();
+  slideSet.on('mouseenter', function(){
+    slideStopFn();
+  });
+  slideSet.on('mouseleave', function(){
+    slideGoFn();
+  })
+
+  // 4. 해당 li 클릭 시 해당하는 모달 창 띄우기
   // - 누르면 해당 id에 속하는 내용 띄우고
   // - x 버튼 누르면 다시 내용 사라지도록
 
@@ -155,6 +175,9 @@ $.ajax({
     e.preventDefault();
     modalWindow.fadeOut();
   })
+
+  
+
 
 }) // $.ajax
 })(jQuery);
