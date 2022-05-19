@@ -1,0 +1,34 @@
+[
+ {
+   "id": "notice01",
+   "number": 1,
+   "title": "★ 르주르 오프라인 입점 안내",
+   "content": "notice_01.jpg",
+   "writer": "관리자",
+   "date": "2022.04.01"
+ },
+ {
+   "id": "notice02",
+   "number": 2,
+   "title": "★ 르주르 대한아토피협회 추천 제품으로 선정",
+   "content": "notice_02.jpg",
+   "writer": "관리자",
+   "date": "2022.04.02"
+ },
+ {
+   "id": "notice03",
+   "number": 3,
+   "title": "★ 르주르 2021 올해의 브랜드 대상 영유아세제 부분 수상",
+   "content": "notice_03.jpg",
+   "writer": "관리자",
+   "date": "2022.04.03"
+ },
+ {
+   "id": "notice04",
+   "number": 4,
+   "title": "★ 르주르 홈페이지 리뉴얼로 인한 안내사항",
+   "content": "notice_04.jpg",
+   "writer": "관리자",
+   "date": "2022.04.04"
+ }
+]
