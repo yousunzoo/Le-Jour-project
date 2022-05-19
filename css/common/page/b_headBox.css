@@ -2,7 +2,7 @@
    /* #headBox----------------------------------------- */
    #headBox {
     position:fixed; top:0; left:0; z-index:1000;
-    width: 100%; height:auto;
+    width: 100%; height:auto; padding:20px 140px;
     box-sizing: border-box;
     background-color: #fff;
   }
