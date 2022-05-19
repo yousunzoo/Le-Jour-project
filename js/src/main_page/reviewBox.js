@@ -3,7 +3,7 @@
  * json 문서 불러오기
  * review_data 길이만큼 li 생성 -- append
  * 각각의 카드에 맞는 내용 삽입 -- css, text, attr
- * review slide 버튼 눌렀을 때 구동 및 자동 슬라이드 구현
+ * review slide 버튼 눌렀을 때 구동 및 자동 슬라이드 구현 (요소 강제 이동)
  * 해당 li 클릭 시 해당 하는 modal 창 띄우도록
  */
 (function($){
@@ -36,12 +36,14 @@ $.ajax({
   var cardInsertFn = function(n){
     var list = reviewData[n];
     var liN = cardLi.eq(n);
+    var listID = list.id;
     var reviewImg = liN.find('.review_img');
     var reviewImgUrl = 'url("../img/main_page/reviewBox/'+ list.image +'")';
     var reviewCon = liN.find('.review_con');
     var itemEn = liN.find('.item_name_en');
     var itemKo = liN.find('.item_name_ko');
 
+    liN.attr('id',listID);
     reviewImg.css({'backgroundImage' : reviewImgUrl});
     reviewCon.text(list.content);
     itemEn.text(list.productEn);
@@ -70,56 +72,43 @@ $.ajax({
   var i = 0;
   var permission = true;
 
-  var cloneLi, j=0;
-  for (; j < originLiLen; j++){
-    cloneLi = slideLi.eq(j).clone();
-    slideList.append(cloneLi); 
-  }
-  var newSlideLi = slideList.children('li');
-  var newLiLen = newSlideLi.length;
-  var play;
+
 
   // 함수
-
-  var slideGoFn = function(e){
-    play = setInterval(function(e){
-      horizontal.trigger('click');
-    },1500);
-  } // slideGoFn()
-
   var nextBtnFn = function(){
     if(permission){
-      permission = false;
-      i++;
-      slideList.stop().animate({'marginLeft': (-1)*liW*i +'px'}, 500, 'easeInOutQuad', function(){
-        if(i >= originLiLen){
-          slideList.css({'marginLeft':0})
-          i = 0;
-        };
-      });
-      permission = true;
-    };
-    } // nextBtnFn()
 
-  var prevBtnFn = function(){
-    if(permission){
       permission = false;
-      i -= 1;
-      slideList.stop().animate({'marginLeft': (-1)*liW*i +'px'},500, 'easeInOutQuad', function(){
-        if (i < 0){
-          i = originLiLen - 1;
-          slideList.css({marginLeft : (-1)*liW*i +'px'})
-        };
+
+      slideList.stop().animate({'marginLeft':(-1)*liW+'px'}, function(){
+        var firstLi = slideLi.eq(0);
+        slideList.append(firstLi); // 요소 강제이동
+        slideList.css({'marginLeft':0});
+        slideLi = slideList.children('li'); // 순서 재배치
+
         permission = true;
       });
     }
   }
 
+  var prevBtnFn = function(){
+    if(permission){
 
-  slideList.css({'width' : liW*newLiLen + 'px', 'marginLeft' : (-1)*liW+'px'})
+      permission = false;
+
+      var liLast = slideLi.eq(-1);
+      slideList.prepend(liLast);
+      slideList.css({'marginLeft':(-1)*liW+'px'});
+
+      slideList.stop().animate({marginLeft:0}, 500, function(){
+        slideLi = slideList.children('li');
+        permission = true;
+      })
+    }
+  }
 
 
-  nextBtn.on('click',function(e){
+  nextBtn.on('click', function(e){
     e.preventDefault();
     nextBtnFn();
   })
@@ -128,5 +117,44 @@ $.ajax({
     e.preventDefault();
     prevBtnFn();
   })
+
+  // 3. 해당 li 클릭 시 해당하는 모달 창 띄우기
+  // - 누르면 해당 id에 속하는 내용 띄우고
+  // - x 버튼 누르면 다시 내용 사라지도록
+
+  // 변수
+  var modalWindow = reviewBox.find('.review_modal_window');
+  var modalData = modalWindow.find('.modal_data');
+  var modalCon = modalData.find('.modal_content');
+  var modalImg = modalCon.find('.modal_img');
+  var goodsImg = modalCon.find('.goods_img');
+  var goodsTit = modalCon.find('.goods_tit');
+  var reviewT = modalCon.find('.review_text');
+  var closeBtn = modalData.find('.close_btn');
+
+
+  // 이벤트
+  slideLi.find('a').on('click', function(e){
+    e.preventDefault();
+    var par = $(this).parent().index(); // a 부모요소인 li의 인덱스 값
+    var liID = slideLi.eq(par).attr('id');
+    var j = liID - 1;
+    var list = reviewData[j];
+    var imgUrl = 'url("../img/main_page/reviewBox/'+ list.image +'")';
+    var goodsImgUrl = 'url("../img/main_page/reviewBox/' +list.product_img +'")';
+
+    modalImg.css({'backgroundImage':imgUrl});
+    goodsImg.css({'backgroundImage':goodsImgUrl});
+    goodsTit.text(list.productKo);
+    reviewT.text(list.content);
+
+    modalWindow.fadeIn();
+    closeBtn.focus();
+  })
+  closeBtn.find('button').on('click', function(e){
+    e.preventDefault();
+    modalWindow.fadeOut();
+  })
+
 }) // $.ajax
 })(jQuery);
