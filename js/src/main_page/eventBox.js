@@ -50,9 +50,10 @@ var prevBtnFn = function(){
   if(permission){
     permission = false;
     i -= 1;
+    console.log(i);
     eventSlider.stop().animate({marginLeft:-100*i+'%'}, function(){
       if(i < 0){
-        i = originDivLen - 1;
+        i = originDivLen-1;
         eventSlider.css({marginLeft: -100*i +'%'});
       }; // 맨 마지막 div(실제 div)로 보냄
       permission = true;
@@ -62,7 +63,9 @@ var prevBtnFn = function(){
 
 var nowIFn = function(){
   nowT.text(originDivLen);
-  nowI.text(i+1);
+  if(i<0){
+    nowI.text(originDivLen)
+  }else{nowI.text(i+1);}
 } // nowIFn()
 
 var slideGoFn = function(){
@@ -87,7 +90,7 @@ eventSlider.css({width:(100 * newDivLen)+'%', left:-100+'%'})
 newEventDiv.css({width:(100 / newDivLen)+'%'})
 
 nowIFn();
-slideGoFn();
+// slideGoFn();
 
 // 이벤트
 nextBtn.on('click', function(e){
