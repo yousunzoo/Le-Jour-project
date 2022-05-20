@@ -116,7 +116,18 @@ $.ajax({
     tabBtn.parent().eq(n).siblings().removeClass('on');
 
     productMenuSetFn(n);
-    cardUl.css({'marginLeft':0})
+    cardUl = cardArea.find('.product_list');
+    cardUl.css({'marginLeft':0});
+    cardLi = cardUl.children('li');
+    liLen = cardLi.length;
+    
+    i=0;
+    if (liLen <= 4){
+      slideBtn.hide();
+    } else {
+      prevBtn.hide();
+      nextBtn.show();
+    }
   })
 
   var cardLi = cardUl.find('li');
@@ -130,16 +141,13 @@ $.ajax({
   })
 
   // 변수
-  var productBox = $('#productBox')
   var btnArea = productBox.find('.product_btns');
   var slideBtn = btnArea.children('button')
   var nextBtn = btnArea.children('.next')
   var prevBtn = btnArea.children('.prev')
-  var cardUl = productBox.find('.product_list');
-  var cardLi = cardUl.children('li');
   var liW = cardLi.outerWidth(true);
 
-  var i = 0;
+  
   var liLen = cardLi.length;
   var timed = 500;
 
@@ -148,8 +156,8 @@ $.ajax({
     if ( i <= 0){
       i=0;
       prevBtn.hide();
-    }else if (i >= liLen-4){
-      i = liLen - 4;
+    }else if (i >= liLen - 1 ){
+      i = liLen - 1;
       nextBtn.hide();
     }else{
       slideBtn.show();
@@ -158,13 +166,16 @@ $.ajax({
     cardUl.stop().animate({'marginLeft':(-1)*liW*i+'px'}, timed);
   };
 
+  i=0;
   btnClickFn(0);
 
   // 이벤트
 
   slideBtn.on('click', function(e){
     e.preventDefault();
-
+    cardLi = cardUl.find('li');
+    liLen = cardLi.length;
+    
     var btnNext = $(this).hasClass('next');
     (btnNext) ? i+=1 : i -= 1;
     btnClickFn();
