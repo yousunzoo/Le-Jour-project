@@ -14,6 +14,8 @@
   var nBtn = navBtn.find('button');
   var closeBtn = navBox.find('.close_btn');
   var cBtn = closeBtn.find('button');
+  var searchBtn = navBox.find('.search_btn');
+  var headerSearch = headBox.find('.header_search');
 
   // 함수
   var showNavBox = function(e){
@@ -25,10 +27,15 @@
     e.preventDefault();
     navBox.fadeOut()
   }
+
   
   // 이벤트
   nBtn.on('click', showNavBox);
   cBtn.on('click', closeNavBox);
-  
+
+  searchBtn.find('a').on('click', function(e){
+    e.preventDefault();
+    headerSearch.slideToggle();
+  })
 
 })(jQuery);

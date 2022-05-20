@@ -71,7 +71,7 @@ var nowIFn = function(){
 var slideGoFn = function(){
   play = setInterval(function(){
     nextBtn.trigger('click');
-  }, timed*2);
+  }, timed*3);
 } // slideGoFn() 
 
 var slideStopFn = function(){
@@ -90,7 +90,7 @@ eventSlider.css({width:(100 * newDivLen)+'%', left:-100+'%'})
 newEventDiv.css({width:(100 / newDivLen)+'%'})
 
 nowIFn();
-// slideGoFn();
+slideGoFn();
 
 // 이벤트
 nextBtn.on('click', function(e){
