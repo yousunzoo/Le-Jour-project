@@ -36,18 +36,17 @@
     background-position: 50% 50%;
   }
 
-  .gnb_top {margin-bottom:12px;}
+  .gnb_top {text-align:right; margin-bottom:12px;}
   .gnb_top li {
-    float:right; position:relative;
+    display:inline-block; position:relative;
     width:auto; height:13px; padding:2px 12px;
     font-size:13px; text-transform: uppercase;
     letter-spacing : 1px; word-spacing: -4px;}
-  .gnb_top li:first-child {border-right: none;}
   .gnb_top li span {margin-right:4px}
   .gnb_top li:before {
     content:""; position:absolute; top:5px; right:0; width: 1px; height:10px; background-color: var(--light_gray_02);
   }
-  .gnb_top li:first-child:before {display: none;}
+  .gnb_top li:last-child:before {display: none;}
   .gnb_bottom li {float:left; padding : 0 10px;
     font-size:14px;
     font-weight: 500;
@@ -57,5 +56,36 @@
   .gnb_top li:hover,
   .gnb_bottom li:hover {
     font-weight:700;
+  }
+
+  .header_search {
+    display: none;
+    position : absolute; left:0; right:0; margin:auto;
+    margin-top:20px;
+    width: 50%; height:auto;
+    padding:20px; box-sizing: border-box;
+    background-color: var(--white);
+  }
+
+  .header_search_content {
+    width: 90%; height:auto; margin:auto;
+  }
+
+  form, fieldset {position:relative; margin:0; padding:0; outline:0; border:0;}
+  .top_search legend {display: block; width: 0;height: 0; position:absolute; z-index: -1; overflow: hidden;}
+  .search_input {width:80%; height:auto; margin:auto; padding:0 10px 10px 10px; box-sizing:border-box; border-bottom:1px solid var(--black_01)}
+  .search_input > #topSearch {
+    float:left;
+    width:90%; height:20px; 
+    padding:10px; box-sizing:border-box; border:0; font-size:14px; letter-spacing: 2px; text-transform: uppercase;}
+
+   input::placeholder {color:var(--border_gray)}
+  .search_input > #goToSearch {
+    float:right;
+    width:20px; height:20px; border:0; background: transparent;
+    background-image: url("../../../img/common/headbox/sear-btn.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
   }
 }
