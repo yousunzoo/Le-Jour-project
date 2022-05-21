@@ -1,0 +1,54 @@
+/* find_id.css */
+
+@import url("../common/page/a_wrap.css");
+@import url("../common/page/b_headBox.css");
+@import url("../common/page/b_footBox.css");
+
+@media all {
+  #findIDBox {
+    width: 100%; height:auto;
+  }
+  
+  .page_banner {
+    background-image: url("../../img/join/banner.jpg");
+  }
+
+  
+
+  .form_area {width: 630px; height:auto; margin:auto; margin-bottom:300px; 
+    padding:70px 0; box-sizing:border-box; background-color: #fff;}
+  .form_area > form {width: 450px; height:auto; margin:auto;}
+
+  form, fieldset {position:relative; margin:0; padding:0; border:0;}
+  legend {display: block; width: 0; height: 0; position:absolute; z-index: -1; overflow: hidden;}
+  .find_id_box {width: 100%; height:auto}
+
+  .find_id_sec {width: 100%; height:auto; margin-bottom:30px;}
+
+  .find_id_input_sec {float:left; width: 320px; height:auto;}
+  .find_id_sec h3 {
+    display:block; width:100%; height:35px;
+    margin-bottom:10px; line-height:35px;
+    font-size:20px; font-weight:500; letter-spacing: -1px; }
+
+  .user_input {width: 100%; height:auto; margin-bottom:10px}
+  .user_input input {display:inline-block; width: 100%; height: 55px; padding:10px; font-size:15px; box-sizing: border-box; border:1px solid var(--light_gray_03)}
+  .user_input input::placeholder {color:var(--black_01)}
+  
+  .find_id_btn_sec {float:right; width: 120px; height:120px;}
+  .find_id_btn_sec > input {
+    width: 100%; height:100%;
+  border:none; font-size:16px; font-weight:700; color:var(--white); background-color: var(--brown_01);}
+
+  /* 빈칸이 있을 때 출력할 내용 -------------------------- */
+  .alert_box {float:left; width: 100%; height:auto;}
+  .alert_box p {display:none; width: 100%; height:20px; line-height:20px; font-size:14px; color:var(--red);}
+  /* -------------------------- */
+  .btn_member_sec {width: 100%; height:auto; padding-bottom:15px; border-bottom:1px solid var(--light_gray_03)}
+  .btn_member_sec ul {width: 100%; height:auto; text-align: center;}
+  .btn_member_sec li {display: inline-block; width: 45%; height:auto; }
+  .btn_member_sec li:first-child {margin-right:10px}
+  .btn_member_sec li button {width: 100%; height:55px; letter-spacing: -1px;}
+  .find_pw button {border:1px solid var(--brown_01)}
+  .login button {color:var(--white); background-color: var(--brown_01);}
+}
