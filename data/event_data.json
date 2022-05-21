@@ -1,0 +1,74 @@
+[
+ {
+   "id": "event01",
+   "type": "end",
+   "title": "2022년 APRIL 금액대별 이벤트",
+   "content": "event_end_01.jpg",
+   "summary": "해당 금액 구매 시 사은품 증정",
+   "term": "2022.03.31 00:00 ~ 2022.05.01 00:00",
+   "writer": "관리자"
+ },
+ {
+   "id": "event02",
+   "type": "end",
+   "title": "2022년 APRIL 1+1 이벤트",
+   "content": "event_end_02.jpg",
+   "summary": "해당 상품 구매 시 한 개 더 증정",
+   "term": "2022.03.31 00:00 ~ 2022.04.29 17:00",
+   "writer": "관리자"
+ },
+ {
+   "id": "event03",
+   "type": "end",
+   "title": "2022년 APRIL 할인 이벤트",
+   "content": "event_end_03.jpg",
+   "summary": "르주르 베이비 로션 할인 이벤트",
+   "term": "2022.03.31 00:00 ~ 2022.04.29 17:00",
+   "writer": "관리자"
+ },
+ {
+   "id": "event04",
+   "type": "end",
+   "title": "2022년 APRIL 증정 이벤트",
+   "content": "event_end_04.jpg",
+   "summary": "5만원 이상 구매 시 증정",
+   "term": "2022.03.31 00:00 ~ 2022.04.29 17:00",
+   "writer": "관리자"
+ },
+ {
+   "id": "event05",
+   "type": "now",
+   "title": "2022년 MAY 금액대별 이벤트",
+   "content": "event_now_01.jpg",
+   "summary": "해당 금액 구매 시 사은품 증정",
+   "term": "2022.05.01 00:00 ~ 2022.06.01 00:00",
+   "writer": "관리자"
+ },
+ {
+   "id": "event06",
+   "type": "now",
+   "title": "2022년 르주르 1+1 이벤트",
+   "content": "event_now_02.jpg",
+   "summary": "해당 상품 구매 시 한 개 더 증정",
+   "term": "2022.04.29 17:00 ~ 2022.05.31 17:00",
+   "writer": "관리자"
+ },
+ {
+   "id": "event07",
+   "type": "now",
+   "title": "2022년 르주르 할인 이벤트",
+   "content": "event_now_03.jpg",
+   "summary": "르주르 토일렛 커버 클렌저 할인 이벤트",
+   "term": "2022.04.29 17:00 ~ 2022.05.31 17:00",
+   "writer": "관리자"
+ },
+ {
+   "id": "event08",
+   "type": "now",
+   "title": "2022년 르주르 증정 이벤트",
+   "content": "event_now_04.jpg",
+   "summary": "5만원 이상 구매 시 증정",
+   "term": "2022.04.29 17:00 ~ 2022.05.31 17:00",
+   "writer": "관리자"
+ }
+]

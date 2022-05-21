@@ -17,7 +17,8 @@
 
   #navBox .close_btn {display:block;}
 
-  .gnb_top li {float:none; margin-bottom:20px; 
+  .gnb_top {text-align: left;}
+  .gnb_top li {display:block; margin-bottom:20px; 
     font-size: 15px; font-weight:700; color:var(--brown_01); text-transform: capitalize;}
     .gnb_top li i {display: none;}
     .handhelds_h {display: none;}
