@@ -2,6 +2,7 @@
 /**
  * 기능 구현
  * - productBox 영역 탭메뉴 구현
+ * - handhelds_ mobile에서 tab 부분 스와이프 가능하도록
  * - 각 탭에 해당하는 상품 카드 생성 및 항목 세팅
  * - 카드에 mouse 올리면 장바구니 창 나타나도록
  * - next, prev 버튼 구현
@@ -12,6 +13,7 @@ $.ajax({
   url : "../data/goods_list_data.json",
   context : document.body
 }).done(function(data){
+  var deviceCk = $.CheckType;
   var productData = data;
 
   var i = 0;
@@ -100,7 +102,11 @@ $.ajax({
     var liW = li.outerWidth(true);
 
     cardUl.css({'width':liW*liLen+'px'}) 
+    if(deviceCk === 'laptop'){
+      cardArea.css({'width':liW*3+'px'})
+    }else{
     cardArea.css({'width':liW*4+'px'})
+    }
   }
 
 
@@ -122,7 +128,9 @@ $.ajax({
     liLen = cardLi.length;
     
     i=0;
-    if (liLen <= 4){
+    if(deviceCk === 'smartphone' || deviceCk === 'tablet' && liLen > 2){
+      nextBtn.show();
+    }else if(liLen <= 4){
       slideBtn.hide();
     } else {
       prevBtn.hide();
@@ -132,6 +140,7 @@ $.ajax({
 
   var cardLi = cardUl.find('li');
 
+  if(deviceCk !== 'smartphone' && deviceCk !== 'tablet'){
   cardLi.on('mouseenter', function(e){
     $(this).find('.card_link').slideDown(300);
   })
@@ -139,6 +148,7 @@ $.ajax({
   cardLi.on('mouseleave', function(e){
     $(this).find('.card_link').slideUp(300);
   })
+  }
 
   // 변수
   var btnArea = productBox.find('.product_btns');
@@ -153,6 +163,7 @@ $.ajax({
 
   // 함수
   var btnClickFn = function(){
+
     if ( i <= 0){
       i=0;
       prevBtn.hide();
@@ -170,7 +181,6 @@ $.ajax({
   btnClickFn(0);
 
   // 이벤트
-
   slideBtn.on('click', function(e){
     e.preventDefault();
     cardLi = cardUl.find('li');
@@ -178,7 +188,9 @@ $.ajax({
     
     var btnNext = $(this).hasClass('next');
     (btnNext) ? i+=1 : i -= 1;
+
     btnClickFn();
+
     console.log(i);
   })
 }) // $.ajax
