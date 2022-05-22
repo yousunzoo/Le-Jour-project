@@ -33,6 +33,10 @@
     height:110px; text-align: center; color:var(--black_01); letter-spacing: -1px;
     border-bottom : 1px solid var(--border_gray)
   }
+
+  .notice_table tbody tr:hover {
+    background-color: var(--main_02);
+  }
   .notice_table tbody .no_name {
     text-align: left;
   }
