@@ -2,6 +2,7 @@
   /* #headBox */
   #headBox {padding:20px 140px;}
 
-  /* #slideBox */
-  
+  /* #reviewBox */
+  .review_btns {position: absolute; top:50%; transform: translateY(-50%); width: 100%;}
+
 }

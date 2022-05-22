@@ -4,12 +4,11 @@
 #headBox {padding:20px 30px;}
 
 /* #productBox */
-.product_wrap {width: 94%;}
 .product_list {width: 900px; height:480px; overflow:hidden;}
 
 /* #reviewBox */
-.review_slide_wrap {margin-bottom:80px;}
-.review_btns {position: absolute; top:105%; left:50%; transform: translateX(-50%); width: 80%;}
+.review_slide_wrap {width:100%; margin-bottom:80px;}
+.review_btns {bottom:-14%; left:50%; transform:translateX(-50%); width: 80%; }
 
 
 /* footTopBox */

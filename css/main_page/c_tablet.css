@@ -38,20 +38,20 @@
   /* #productBox */
 
   /* product_tab */
-  .product_tab_list {width: 735px; text-align: center;}
+  .product_tab_list {width: 760px; text-align: center;}
 
   .product_tab_list li {float:none; display:inline-block;}
   
   .product_tab_list button span {
-    padding:0 10px;}
+    padding:0 8px;}
 
   .product_btns {position:absolute;
-    top:-30px; left:50%; margin-left:360px; transform:translate(-100%);
+    top:-40px; left:50%; margin-left:360px; transform:translate(-100%);
     width: 80px; height: 30px; font-size:20px;}
 
    /* product_list */
    .product_wrap {position:relative; width: 96%;}
-   .product_list {width: 100%; margin-bottom:40px; text-align:center; }
+   .product_list {width: 100%; margin-bottom:80px; text-align:center; }
    .product_list li {
     display: inline-block; float:none;
     width: 360px; margin:0 8px; margin-bottom:80px;}
@@ -60,12 +60,13 @@
    .item_name_en {font-size: 12px;}
    .item_name_ko {font-size: 14px;}
 
-   .product_list .img_box .card_link {
-    display:block; bottom:-39%; width: 92%;
+   .product_list .card_link {
+    display:block; bottom:-8%; width: 96%; padding:0 10px;
   }
-  .img_box .card_link a {width: 200px; font-size:11px;}
-  .img_box .card_link a i {margin-right:20px}
-  .img_box .card_link button {width:20px; margin-left:30px}
+  .card_link .card_link_bg {display: none;}
+  .product_list .card_link a {width: 200px; font-size:11px;}
+  .product_list .card_link a i {margin-right:20px}
+  .product_list .card_link button {width:20px; margin-left:30px}
 
   
     /* product_wrap .more_btn */
@@ -78,8 +79,10 @@
     .event_slide{height: 768px;}
 
     /* reviewBox */
-    #reviewBox {height:auto;}
-    .review_btns {display: none;}
+    #reviewBox {height:auto;}  
+    .review_btns {
+      position: absolute; bottom:0;
+    }
   
     .review_list {width: 640px;} 
     .review_list li {width: 200px;height: 340px;}

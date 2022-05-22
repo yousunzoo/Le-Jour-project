@@ -41,11 +41,11 @@
   /* #productBox */
 
     /* product_tab */
-    .product_tab_list {width: 735px; padding:0 10px; text-align: center;}
+    .product_tab_list {width: 760px; padding:0 10px; text-align: center;}
     .product_tab_list li {float:none; display:inline-block;}
 
     .product_tab_list button span {
-      padding:0 10px;}
+      padding:0 8px;}
 
     /* product_btns */
     .product_btns {
@@ -56,18 +56,18 @@
     .product_wrap {width: 92%;}
     .product_list {width: 100%; margin-bottom:40px;}
     .product_list li {width: 140px; margin-right:10px; margin-bottom:60px;}
-    .product_list li:nth-child(2n) {margin-right: 0;}
     .product_list .img_box {height:170px}
-    .product_list .card_content {padding:30px 10px}
+    .product_list .card_content {width: 100%; height: 160px;padding:30px 10px}
     .item_name_en {font-size: 12px;}
     .item_name_ko {font-size: 14px;}
 
-    .product_list .img_box .card_link {
-      display:block; bottom:-112%; width: 96%;
+    .product_list .card_link {
+      display:block; bottom:-12%; width: 100%; padding:0 4px; margin:auto;
     }
-    .img_box .card_link a {width: 76px; font-size:11px;}
-    .img_box .card_link a i {margin-right:4px}
-    .img_box .card_link button {width:20px; margin-left:8px}
+    .card_link .card_link_bg {display: none;}
+    .product_list .card_link a {width: 76px; font-size:11px;}
+    .product_list .card_link a i {margin-right:4px}
+    .product_list .card_link button {width:20px; margin-left:8px}
 
     /* product_wrap .more_btn */
     .product_wrap .more_btn {background-color: var(--yellow);}
@@ -77,22 +77,12 @@
   /* #eventBox */
   .event_btns {bottom:20px; left:0; right:0; margin:auto; width: 250px;}
   .event_slide {height: 570px;}
-  #event01 {background: url("../../img/main_page_rwd/phone/event_01.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;}
-  #event02 {background: url("../../img/main_page_rwd/phone/event_02.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;}
-  #event03 {background: url("../../img/main_page_rwd/phone/event_03.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;}
 
   /* #reviewBox */
   #reviewBox {height:auto;}
-  .review_btns {display: none;}
+  .review_btns {
+    position: absolute; bottom:0;
+  }
 
   .review_list {width: 640px;} 
   .review_list li {width: 200px;height: 340px;}
