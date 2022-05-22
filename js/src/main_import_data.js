@@ -15,7 +15,7 @@ setTimeout(function(){
 
   // 기능 수행
   headBox.load(baseUrl + importPage[0], function(){
-    var headMenu = '<script src="../js/src/commonFile/headBox_handhelds.js"></script>';
+    var headMenu = '<script src="../js/src/commonFile/headBox_handhelds.js" class="head_script"></script>';
     (deviceCk === 'smartphone' || deviceCk === 'tablet') ? body.append(headMenu) : body.remove($('.head_script'))
   });
 
@@ -31,6 +31,7 @@ setTimeout(function(){
   var mainUrl = "../page/main/";
   var importMain = ['slideBox.html','productBox.html','eventBox.html','reviewBox.html','snsBox.html','footTopBox.html','footBox.html'];
   var mainSelect = [slideBox, productBox, eventBox, reviewBox, snsBox, footTopBox];
+  var productBoxM = '<script src="../js/src/main_page/productBox_mobile.js" class="pB_script"></script>';
 
   // 기능수행
   $.each(mainSelect, function(index,selector){
@@ -38,7 +39,8 @@ setTimeout(function(){
       if(index === 0){
         body.append('<script src="../js/src/main_page/slideBox.js"></script>')
       }else if(index === 1){
-        body.append('<script src="../js/src/main_page/productBox.js"></script>')
+        body.append('<script src="../js/src/main_page/productBox.js"></script>');
+        (deviceCk === 'smartphone') ? body.append(productBoxM) : body.remove($('.pB_script'));
       }else if(index === 2){
         body.append('<script src="../js/src/main_page/eventBox.js"></script>')
       }else if(index === 3){
