@@ -55,4 +55,40 @@
     border-bottom:2px solid var(--brown_01)
   }
 
+
+  /* modal */
+  .notice_modal_window {position:fixed; top:0; left:0; width:100%; height:100vh; z-index: 2000;}
+
+  .modal_data {
+    position:absolute; top:50%; left:50%; z-index: 100;
+    width: 800px; height:600px;
+    transform: translateX(-50%) translateY(-50%);
+    padding:30px; box-sizing: border-box;
+    border-radius: 10px;
+    background-color:var(--main_01);
+    box-shadow: 3px 3px 4px var(--black_01);
+  }
+  .close_btn {
+    position:absolute; top:0; right:-6%;
+    width: 30px; height: 30px;
+  }
+  .close_btn:hover {border:1px solid yellowgreen }
+  .close_btn img {width: 100%; height: 100%;}
+
+  .modal_content {
+    width: 100%; height:100%; 
+  }
+  .modal_title {width: 100%; height:auto;
+    margin-bottom:20px; padding:20px 0; box-sizing: border-box;
+    border-top:2px solid var(--brown_01);
+    border-bottom:1px solid var(--border_gray)}
+  .modal_title h3 {display:inline-block; width:90%; font-weight:700; font-size:16px;}
+  .modal_title p {display:inline-block; width: 8%; text-align: right;}
+
+  .modal_con {width: 100%; height:450px; overflow-y: scroll;}
+  .modal_con img {width: 100%;}
+  .modal_bg {width: 100%; height: 100%; z-index:-1;
+  background-color: var(--black_02);
+  opacity: 80%;}
+
 }
