@@ -16,7 +16,9 @@ setTimeout(function(){
   // 기능 수행
   headBox.load(baseUrl + importPage[0], function(){
     var headMenu = '<script src="../js/src/commonFile/headBox_handhelds.js" class="head_script"></script>';
-    (deviceCk === 'smartphone' || deviceCk === 'tablet') ? body.append(headMenu) : body.remove($('.head_script'))
+    var headSearch = '<script src="../js/src/commonFile/headBox.js"></script>';
+    (deviceCk === 'smartphone' || deviceCk === 'tablet') ? body.append(headMenu) : body.remove($('.head_script'));
+    body.append(headSearch);
   });
 
   footBox.load(baseUrl + importPage[1]);
