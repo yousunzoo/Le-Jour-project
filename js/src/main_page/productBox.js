@@ -47,12 +47,11 @@ $.ajax({
   // 변수
   var productBox = $('#productBox');
   var tabArea = productBox.find('.product_tab');
-  var tabT = tabArea.find('.tab_title');
   var cardArea = productBox.find('.card_area');
 
   // tabTitle 내부에 탭메뉴 제목부 구성 : tabTitleCk 이용
-  tabT.html('<ul class="product_tab_list tab_title"></ul>');
-  var tabTUl = tabT.children('ul');
+  tabArea.html('<ul class="product_tab_list tab_title"></ul>');
+  var tabTUl = tabArea.children('ul');
   var titleEl = '<li><button type="button"><span></span></button></li>';
   var tabTLen = tabTitleCk.length;
 
@@ -61,7 +60,7 @@ $.ajax({
     tabTUl.find('li').eq(i).find('span').text(tabTitleCk[i]);
   }; // 각 배열에 해당하는 제목 붙여넣기
 
-  var tabTLi = tabT.find('li');
+  var tabTLi = tabTUl.find('li');
   var tabBtn = tabTLi.find('button');
   tabTLi.eq(0).addClass('on');
 

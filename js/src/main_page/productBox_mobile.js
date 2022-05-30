@@ -5,49 +5,28 @@
 
 (function($){
 var productBox = $('#productBox');
-var tabList = productBox.find('.product_tab_list');
-var tabListLi = tabList.children('li');
-var tabLiLen = tabListLi.length;
-
-var i=0;
-var j;
-var permission = true;
-var startX, endX;
+var tabArea = productBox.find('.product_tab');
+var tabTUl = tabArea.children('.product_tab_list');
+var tabTLi = tabTUl.find('li');
+var startX, start1;
 
 
 
-// 함수
-var nextSwipeFn = function(){
-  
-    i+=1;
-    j=i;
-    var liWidth = tabListLi.eq(1).width();
-    console.log(liWidth);
-    tabList.stop().animate({marginLeft:-20*j+'%'});
-}
-
-var prevSwipeFn = function(){
-  if(permission){
-    permission = false;
-    tabList.stop().animate({marginLeft:0});
-    permission = true;
-  }
-}
-
-// 이벤트
-tabList.on('touchstart', function(e){
+tabArea.on('touchstart', function(e){
   startX = parseInt(e.originalEvent.changedTouches[0].clientX);
-});
-
-tabList.on('touchend', function(e){
-  endX = parseInt(e.originalEvent.changedTouches[0].clientX);
-  var resultX = startX - endX;
-  if(resultX > 100){
-    nextSwipeFn();
-  }else if(resultX < -100){
-    prevSwipeFn();
+})
+tabArea.on('touchmove', function(e){
+  e.preventDefault();
+  start1 = parseInt(e.originalEvent.changedTouches[0].clientX);
+  var moveW = startX - start1;
+  console.log(moveW );
+  if(moveW <= 0){
+    tabArea.css({'marginLeft':0})
+  } else {
+    tabArea.css({'marginLeft': -1* moveW +'px'});
   }
-});
+  
+})
 
 
 })(jQuery);
